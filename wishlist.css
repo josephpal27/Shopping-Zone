@@ -34,6 +34,10 @@ nav{
     justify-content: center;
 }
 
+.nav-left a{
+    text-decoration: none;
+}
+
 .nav-left .logo{
     margin-right: 4rem;
     padding: 0.6rem 0;

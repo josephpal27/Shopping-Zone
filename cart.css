@@ -33,6 +33,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    .nav-left a{
+        text-decoration: none;
+    }
     
     .nav-left .logo{
         margin-right: 4rem;
