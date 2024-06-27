@@ -1,8 +1,8 @@
-
+    // --- Initializing the Variables
     let editBtn = document.querySelectorAll('.edit-btn');
     let saveBtn = document.querySelectorAll('.save-btn');
 
-
+    // --- Functionality to Edit Button 
     editBtn.forEach((editButton) => {
        editButton.addEventListener('click', (event) => {
       
@@ -19,7 +19,7 @@
     });
   
  
-
+    // --- Functionality to Save Button
     saveBtn.forEach((saveButton) => {
       saveButton.addEventListener('click', (event) => {
 
