@@ -1,0 +1,278 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+/* Edit Scroll Bar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+    
+/* --- Navbar Starts here --- */
+nav{
+    background-color: rgb(152, 23, 217);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left a{
+    text-decoration: none;
+}
+
+.nav-left .logo{
+    margin-right: 4rem;
+    padding: 0.6rem 0;
+    color: white;
+}
+
+form{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.nav-left #searchInput{
+    width: 30vw;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+}
+
+.nav-left form i{
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    color: rgb(169, 44, 232);
+}
+
+.nav-left form i:hover{
+    color: rgb(147, 19, 210);
+    transition: color 0.1s ease;
+}
+
+.nav-right{
+    padding: 0.5rem 0;
+}
+
+.nav-right span{
+ margin-left: 2.5rem;
+ font-size: 1.2rem;
+ font-weight: 500;
+ color: white;
+ padding: 0.95rem 0;
+ cursor: pointer
+ }
+ 
+ .nav-right a{
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .nav-menu{
+   position: absolute;
+   right: 17%;
+   background-color: white;
+   width: max-content;
+   box-shadow: 0px 1px 20px 1px rgba(175, 175, 175, 0.748);
+   z-index: 1;
+   display: none;
+ }
+ 
+.nav-menu #tooltip{
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: -0.4rem;
+   left: 7rem;
+   transform: rotate(180deg);
+  }
+  
+  .nav-menu #tooltip i{
+      color: white;
+      font-size: 1.7rem;
+  }
+  
+  .nav-menu .menu{
+    padding: 0.5rem 5rem 0.8rem 2rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .nav-menu .menu a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-menu .menu:hover{
+    background-color: rgb(242, 242, 242);
+    transition: background-color 0.1s ease;
+ }
+  
+  .nav-menu i{
+    margin-right: 2rem;
+    color: rgb(169, 44, 232);
+  }
+  /* --- Navbar Ends here --- */
+
+
+  /* --- Hero Section Starts here --- */
+  section{
+      background-color: rgb(241, 241, 241);
+      min-height: 90vh;
+  }
+  
+  section .container{
+      display: flex;
+      align-items: flex-start;
+      padding: 1rem;
+      /* background-color: aquamarine; */
+  }
+  
+  section aside{
+      width: 25%;
+  }
+
+  section aside .top{
+      background-color: white;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+  }
+  
+  section aside .top img{
+      margin: 0.8rem;
+  }
+  
+  section aside .top #greet{
+      font-size: 0.8rem;
+  }
+  
+  section aside .top #username{
+      font-weight: 500;
+      font-size: 1.2rem;
+  }
+  
+  section aside .bottom{
+    background-color: white;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+    margin-top: 1rem;
+  }
+
+  section aside .bottom .box{
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+      border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  
+  section aside .bottom .box a {
+      font-weight: 500;
+  }
+  
+  section aside .bottom a{
+      text-decoration: none;
+      color: black;
+     
+  }
+  
+  section aside .bottom a:hover{
+      color: rgb(147, 19, 210);
+  }
+  
+  section aside .bottom .box .fa-caret-right{
+    margin-left: 48%;
+    color: black;
+  }
+
+  section aside .bottom i {
+      color: rgb(153, 17, 221);
+  }
+  
+  section aside .bottom .account{
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+      font-weight: 500;
+  }
+  
+  section aside .bottom .account-menu{
+      padding-left: 3rem;
+      border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  
+  section aside .bottom .account-menu p:hover{
+      color: rgb(147, 19, 210);
+  }
+  
+  section main {
+    background-color: white;
+    width: 73.7%;
+    align-self: self-start;
+    padding: 1.5rem 2rem;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+  }
+
+  section main .box{
+    margin-bottom: 2.5rem;
+  }
+
+  section main .box h5{
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  section main .box input{
+    outline: none;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 0.7rem 1rem;
+    background-color: rgb(243, 243, 243);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  section main .box button{
+    border: none;
+    outline: none;
+    padding: 0.2rem 0.7rem;
+    margin-left: 1rem;
+    color: white;
+  }
+
+  section main .box .edit-btn{
+    background-color: blueviolet;
+  }
+
+  section main .box .edit-btn:hover{
+    background-color: rgb(116, 26, 199);
+  }
+
+  section main .box .save-btn{
+    background-color: rgb(23, 199, 7);
+  }
+
+  section main .box .save-btn:hover{
+    background-color: rgb(17, 177, 3);
+  }
