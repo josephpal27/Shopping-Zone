@@ -89,7 +89,7 @@ form{
  
  .nav-menu{
      position: absolute;
-     right: 17%;
+     right: 10%;
      background-color: white;
      width: max-content;
      box-shadow: 0px 1px 20px 1px rgba(175, 175, 175, 0.748);
@@ -146,6 +146,7 @@ form{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 1rem;
+    overflow: hidden;
     box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
   }
 
@@ -234,7 +235,7 @@ form{
 
     .all-products .all-products-row .product{
         background-color: rgb(249, 249, 249);
-        padding: 1rem 1rem 0.3rem 1rem;
+        padding: 1rem 1rem 0.8rem 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -249,6 +250,7 @@ form{
 
     .all-products .all-products-row .product img {
         height: 200px;
+        width: 300px;
         object-fit: contain;
     }
 

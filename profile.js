@@ -17,7 +17,6 @@
         saveButton.style.display = 'inline-block';
       });
     });
-  
  
     // --- Functionality to Save Button
     saveBtn.forEach((saveButton) => {
