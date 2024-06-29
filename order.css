@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.2s ease;
+    transition: all 0.15s ease;
+  }
+
+  a{
+    text-decoration: none;
   }
   
   /* Edit Scroll Bar */
   ::-webkit-scrollbar {
-      width: 0;
+      width: 0px;
   }
   
   ::-webkit-scrollbar-track {
@@ -15,7 +19,7 @@
   }
   
   ::-webkit-scrollbar-thumb {
-      background: transparent;
+      background: blueviolet;
   }
       
   /* --- Navbar Starts here --- */
@@ -93,7 +97,7 @@
      background-color: white;
      width: max-content;
      box-shadow: 0px 1px 20px 1px rgba(175, 175, 175, 0.748);
-     z-index: 1;
+     z-index: 3;
      display: none;
    }
    
@@ -133,4 +137,136 @@
       color: rgb(169, 44, 232);
     }
     /* --- Navbar Ends here --- */
+
+    /* --- Hero Section Starts Here --- */
+    section{
+        background-color: rgb(241, 241, 241);
+        min-height: 90vh;
+        padding: 1.2rem 0;
+    }
+
+    section .container aside{
+        width: 20%;
+        background-color: white;
+        padding: 0 2rem;
+        align-self: self-start;
+        box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+    }
+
+    section .container aside h5{
+        padding: 0.7rem 0 0.5rem 0;
+        font-size: 1.5rem;
+    }
+
+    section .container aside h6{
+        font-size: 1.05rem;
+        margin-bottom: 0.6rem;
+    }
+
+    section .container aside .filter-options{
+        margin-bottom: 1.1rem;
+    }
+
+    section .container aside .filter-options span{
+        font-weight: 500;
+        margin-left: 0.3rem;
+    }
+
+    section .container #apply-btn{
+        border: none;
+        outline: none;
+        padding: 0.4rem 0.8rem;
+        background-color: rgb(16, 180, 16);
+        color: white;
+        margin-bottom: 1.2rem;
+    }
+    section .container #apply-btn:hover{
+        background-color: rgb(9, 163, 9);
+    }
+
+    section .container main{
+        width: 78.5%;
+        max-height: 88.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .container main .search-box{
+        display: flex;
+        gap: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    section .container main .search-box input{
+        width: 70%;
+        padding: 0.5rem;
+        border: none;
+        outline: 2px solid rgb(201, 201, 201);
+        transition: none;
+    }
+
+    section .container main .search-box input:focus{
+        border: none;
+        outline: 3px solid rgb(15, 210, 8);
+    }
+
+    section .container main .search-box button{
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        background-color: rgb(17, 196, 17);
+        color: white;
+    }
+
+    section .container main .search-box button:hover{
+        background-color: rgb(11, 175, 11);
+    }
+
+    section .container main .all-orders{
+        overflow-y: scroll;
+        margin-top: 1.2rem;
+    }
+
+    section .container main .orders{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
+        padding: 0 2rem 0 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+    }
+
+    section .container main .orders:hover{
+        box-shadow: 1px 2px 7px 1px rgba(87, 87, 87, 0.748);
+        color: blueviolet;
+    }
+
+    section .container main .orders .img-div{
+        width: 18%;
+    }
+
+    section .container main .orders .price{
+        width: 22%;
+        text-align: center;
+    }
+    
+    section .container main .orders img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        margin: 0.6rem 0;
+    }
+
+    section .container main .orders .title{
+        width: 50%;
+    }
+
+    section .container main .orders h6{
+        font-size: 1.3rem;
+    }
+    /* --- Hero Section Ends Here --- */
 

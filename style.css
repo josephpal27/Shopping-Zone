@@ -22,6 +22,7 @@ transition: all 0.2s ease;
 nav{
     background-color: rgb(152, 23, 217);
 }
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -267,3 +268,65 @@ form{
         color: rgb(91, 91, 91);
     }
   /* --- All Products Section Ends Here --- */
+
+
+
+
+  /* --- Media Queries --- */
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .nav-left .logo{
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+    .nav-left #searchInput{
+        width: 265px;
+        padding: 0 0.5rem;
+    }
+    .nav-left form i{
+        font-size: 1.4rem;
+        padding: 0 0.5rem 0 0;
+    }
+    .nav-right span{
+        margin-left: 1.5rem;
+    }
+    .nav-menu{
+        position: absolute;
+        right: 7%;
+    }
+
+  }
+
+  /* ---------------------------------------------- */
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .nav-left .logo{
+        margin-right: 1.2rem;
+    }
+    .nav-left .logo span{
+        display: none;
+    }
+    .nav-left #searchInput{
+        width: 250px;
+        padding: 0 0.5rem;
+    }
+    .nav-left form i{
+        font-size: 1.3rem;
+        padding: 0 0.5rem 0 0;
+    }
+    .nav-right span{
+        margin-left: 1.2rem;
+    }
+    .nav-menu{
+        position: absolute;
+        right: 7%;
+    }
+
+  }
+
+  /* ---------------------------------------------- */
+
+  @media screen and (max-width: 575px) {
+    
+
+  }
