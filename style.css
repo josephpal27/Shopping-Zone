@@ -19,8 +19,19 @@ transition: all 0.2s ease;
 }
     
 /* --- Navbar Starts here --- */
+.upper-layer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 5;
+}
 nav{
     background-color: rgb(152, 23, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.98%;
 }
 
 .container{
@@ -87,14 +98,18 @@ form{
      text-decoration: none;
      color: white;
  }
+
+ .nav-right .fa-bars{
+    display: none;
+ }
  
  .nav-menu{
      position: absolute;
      right: 10%;
      background-color: white;
      width: max-content;
-     box-shadow: 0px 1px 20px 1px rgba(175, 175, 175, 0.748);
-     z-index: 1;
+     box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
+     z-index: 10;
      display: none;
  }
  
@@ -275,12 +290,16 @@ form{
   /* --- Media Queries --- */
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    nav{
+        padding: 0 3%;
+    }
     .nav-left .logo{
         margin-right: 1rem;
         font-size: 1.4rem;
     }
     .nav-left #searchInput{
-        width: 265px;
+        width: 34vw;
         padding: 0 0.5rem;
     }
     .nav-left form i{
@@ -289,44 +308,84 @@ form{
     }
     .nav-right span{
         margin-left: 1.5rem;
+        font-size: 1.1rem;
     }
     .nav-menu{
         position: absolute;
-        right: 7%;
+        right: 4.2%;
     }
 
   }
 
   /* ---------------------------------------------- */
 
-  @media screen and (min-width: 576px) and (max-width: 767px) {
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+
+    nav{
+        padding: 0 3%;
+    }
     .nav-left .logo{
         margin-right: 1.2rem;
+        font-size: 1.4rem;
     }
     .nav-left .logo span{
         display: none;
     }
     .nav-left #searchInput{
-        width: 250px;
+        width: 42vw;
         padding: 0 0.5rem;
     }
     .nav-left form i{
         font-size: 1.3rem;
-        padding: 0 0.5rem 0 0;
+        padding: 0 0.7rem 0 0;
     }
     .nav-right span{
         margin-left: 1.2rem;
+        font-size: 1.1rem;
     }
     .nav-menu{
         position: absolute;
-        right: 7%;
+        right: 3.6%;
     }
 
   }
 
   /* ---------------------------------------------- */
 
-  @media screen and (max-width: 575px) {
-    
+  @media screen and (max-width: 576px) {
+    nav{
+        padding: 0 3.7%;
+    }
+    nav .nav-right span{
+        display: none;
+    }
+    .nav-left .logo{
+        margin-right: 1rem;
+        font-size: 1.3rem;
+    }
+    .nav-left .logo span{
+        display: none;
+    }
+    .nav-left #searchInput{
+        width: 55vw;
+        padding: 0 0.5rem;
+    }
+    .nav-left form i{
+        font-size: 1.2rem;
+        padding: 0 0.7rem 0 0;
+    }
+    .nav-right .fa-bars{
+        display: block;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .nav-menu{
+        position: absolute;
+        right: 2%;
+    }
+    .nav-menu #tooltip{
+        position: absolute;
+        left: 13.6rem;
+       }
 
   }

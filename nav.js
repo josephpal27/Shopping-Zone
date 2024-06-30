@@ -1,7 +1,9 @@
 // --- Initializing the Variables
 let user = document.getElementById("user");
+let bars = document.querySelector(".fa-bars");
 let nav_menu = document.querySelector(".nav-menu");
 let tooltip = document.querySelector(".fa-caret-down");
+let layer = document.querySelector('.upper-layer');
 
 // --- Functionality for Menu Box Toggle
 function toggleBox(head, box) {
@@ -23,3 +25,15 @@ box.addEventListener("mouseleave", () => (caret.style.rotate = "0deg"));
 }
 
 toggleCaret(user, nav_menu, tooltip);
+
+
+// --- Functionality for Menu bars
+bars.addEventListener('click', function () {
+  nav_menu.style.display = "block";
+  layer.style.display = "block";
+})
+
+layer.addEventListener('click', function () {
+  layer.style.display = 'none';
+  nav_menu.style.display = 'none';
+})
