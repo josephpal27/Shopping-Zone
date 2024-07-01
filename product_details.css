@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/* Edit Scroll Bar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* --- Navbar Starts here --- */
+.upper-layer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    /* background: rgba(0, 0, 0, 0.068); */
+    z-index: 5;
+}
+
+nav {
+    background-color: rgb(152, 23, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.98%;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left a {
+    text-decoration: none;
+}
+
+.nav-left .logo {
+    margin-right: 4rem;
+    padding: 0.6rem 0;
+    color: white;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.nav-left #searchInput {
+    width: 30vw;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+}
+
+.nav-left form i {
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    color: rgb(169, 44, 232);
+}
+
+.nav-left form i:hover {
+    color: rgb(147, 19, 210);
+    transition: color 0.1s ease;
+}
+
+.nav-right {
+    padding: 0.5rem 0;
+}
+
+.nav-right span {
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.95rem 0;
+    cursor: pointer
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right .fa-bars {
+    display: none;
+}
+
+.nav-menu {
+    position: absolute;
+    right: 10%;
+    background-color: white;
+    width: max-content;
+    box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
+    z-index: -5;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-menu #tooltip {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -0.4rem;
+    left: 7rem;
+    transform: rotate(180deg);
+}
+
+.nav-menu #tooltip i {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.nav-menu .menu {
+    padding: 0.5rem 0 0.8rem 2rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav-menu .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 5rem 0.5rem 0;
+}
+
+.nav-menu .menu:hover {
+    background-color: rgb(242, 242, 242);
+    transition: background-color 0.1s ease;
+}
+
+.nav-menu i {
+    margin-right: 2rem;
+    color: rgb(169, 44, 232);
+}
+
+/* --- Navbar Ends here --- */
+
+
+/* --- Hero Section Starts Here --- */
+section .container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 1rem auto;
+    box-shadow: 0px 1px 20px 1px rgba(196, 196, 196, 0.748);
+}
+
+section .container .img-box img{
+    width: 550px;
+    height: 500px;
+    margin-right: 5rem;
+    padding: 1.5rem 0;
+    object-fit: contain;
+}
+
+section .container .details-box{
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+section .container .details-box h5{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+section .container .details-box p{
+    font-size: 1.3rem;
+}
+section .container .details-box p span{
+    font-weight: 500;
+}
+
+section .container .details-box button{
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    background-color: rgb(11, 163, 11);
+    color: white;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+section .container .details-box button:hover{
+    background-color: rgb(4, 152, 4);
+}
+/* --- Hero Section Ends Here --- */
+
+
+
+
+/* --- Media Queries --- */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    nav {
+        padding: 0 3%;
+    }
+
+    .nav-left .logo {
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .nav-left #searchInput {
+        width: 34vw;
+        padding: 0 0.5rem;
+    }
+
+    .nav-left form i {
+        font-size: 1.4rem;
+        padding: 0 0.5rem 0 0;
+    }
+
+    .nav-right span {
+        margin-left: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: 4.2%;
+    }
+
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    nav {
+        padding: 0 3%;
+    }
+
+    .nav-left .logo {
+        margin-right: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .nav-left .logo span {
+        display: none;
+    }
+
+    .nav-left #searchInput {
+        width: 42vw;
+        padding: 0 0.5rem;
+    }
+
+    .nav-left form i {
+        font-size: 1.3rem;
+        padding: 0 0.7rem 0 0;
+    }
+
+    .nav-right span {
+        margin-left: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: 3.6%;
+    }
+
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 0 3.7%;
+    }
+
+    nav .nav-right span {
+        display: none;
+    }
+
+    .nav-left .logo {
+        margin-right: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .nav-left .logo span {
+        display: none;
+    }
+
+    .nav-left #searchInput {
+        width: 55vw;
+        padding: 0 0.5rem;
+    }
+
+    .nav-left form i {
+        font-size: 1.2rem;
+        padding: 0 0.7rem 0 0;
+    }
+
+    .nav-right .fa-bars {
+        display: block;
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: 2%;
+    }
+
+    .nav-menu #tooltip {
+        position: absolute;
+        left: 13.6rem;
+    }
+
+}
