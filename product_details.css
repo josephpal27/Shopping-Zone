@@ -151,12 +151,18 @@ form {
 
 
 /* --- Hero Section Starts Here --- */
+section{
+    background-color: rgb(243, 243, 243);
+    padding: 1rem 0;
+}
+
 section .container {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    margin: 1rem auto;
+    margin: 0 auto;
     padding: 1.8rem 2rem 1.8rem 0;
+    background-color: white;
     box-shadow: 0px 1px 20px 1px rgba(196, 196, 196, 0.748);
 }
 
@@ -206,6 +212,7 @@ section .container .details-box #wishlist-btn{
 }
 section .container .details-box #order-btn{
     background-color: rgb(11, 163, 11);
+    font-weight: 500;
 }
 
 section .container .details-box #cart-btn:hover{

@@ -1,8 +1,8 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-transition: all 0.2s ease;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
 }
 
 /* Edit Scroll Bar */
@@ -17,9 +17,9 @@ transition: all 0.2s ease;
 ::-webkit-scrollbar-thumb {
     background: transparent;
 }
-    
+
 /* --- Navbar Starts here --- */
-.upper-layer{
+.upper-layer {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -27,7 +27,8 @@ transition: all 0.2s ease;
     /* background: rgba(0, 0, 0, 0.068); */
     z-index: 5;
 }
-nav{
+
+nav {
     background-color: rgb(152, 23, 217);
     display: flex;
     justify-content: space-between;
@@ -35,35 +36,35 @@ nav{
     padding: 0 7.98%;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-left{
+.nav-left {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav-left a{
+.nav-left a {
     text-decoration: none;
 }
 
-.nav-left .logo{
+.nav-left .logo {
     margin-right: 4rem;
     padding: 0.6rem 0;
     color: white;
 }
 
-form{
+form {
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 }
 
-.nav-left #searchInput{
+.nav-left #searchInput {
     width: 30vw;
     height: 2.5rem;
     padding: 0 1rem;
@@ -71,96 +72,98 @@ form{
     outline: none;
 }
 
-.nav-left form i{
+.nav-left form i {
     font-size: 1.5rem;
     padding: 0 .5rem;
     color: rgb(169, 44, 232);
 }
 
-.nav-left form i:hover{
+.nav-left form i:hover {
     color: rgb(147, 19, 210);
     transition: color 0.1s ease;
 }
 
-.nav-right{
+.nav-right {
     padding: 0.5rem 0;
 }
 
-.nav-right span{
- margin-left: 2.5rem;
- font-size: 1.2rem;
- font-weight: 500;
- color: white;
- padding: 0.95rem 0;
- cursor: pointer
- }
- 
- .nav-right a{
-     text-decoration: none;
-     color: white;
- }
+.nav-right span {
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.95rem 0;
+    cursor: pointer
+}
 
- .nav-right .fa-bars{
+.nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right .fa-bars {
     display: none;
- }
- 
- .nav-menu{
-     position: absolute;
-     right: 10%;
-     background-color: white;
-     width: max-content;
-     box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
-     z-index: -5;
-     opacity: 0;
-     transition: all 0.3s ease;
- }
- 
-.nav-menu #tooltip{
-   width: 20px;
-   height: 20px;
-   position: absolute;
-   top: -0.4rem;
-   left: 7rem;
-   transform: rotate(180deg);
-  }
-  
-  .nav-menu #tooltip i{
-      color: white;
-      font-size: 1.7rem;
-  }
-  
-  .nav-menu .menu{
-      padding: 0.5rem 0 0.8rem 2rem;
-      border-bottom: 1px solid rgb(224, 224, 224);
-      font-size: 1.1rem;
-      font-weight: 500;
-  }
-  
-  .nav-menu .menu a{
-      text-decoration: none;
-      color: black;
-      padding: 0.5rem 5rem 0.5rem 0;
-  }
-  
-  .nav-menu .menu:hover{
-      background-color: rgb(242, 242, 242);
-      transition: background-color 0.1s ease;
- }
-  
-  .nav-menu i{
-      margin-right: 2rem;
-      color: rgb(169, 44, 232);
-  }
-  /* --- Navbar Ends here --- */
+}
 
-  
+.nav-menu {
+    position: absolute;
+    right: 10%;
+    background-color: white;
+    width: max-content;
+    box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
+    z-index: -5;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
 
-  section{
+.nav-menu #tooltip {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -0.4rem;
+    left: 7rem;
+    transform: rotate(180deg);
+}
+
+.nav-menu #tooltip i {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.nav-menu .menu {
+    padding: 0.5rem 0 0.8rem 2rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav-menu .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 5rem 0.5rem 0;
+}
+
+.nav-menu .menu:hover {
+    background-color: rgb(242, 242, 242);
+    transition: background-color 0.1s ease;
+}
+
+.nav-menu i {
+    margin-right: 2rem;
+    color: rgb(169, 44, 232);
+}
+
+/* --- Navbar Ends here --- */
+
+
+
+section {
     background-color: rgb(237, 237, 237);
     padding: 0.7rem 1rem 1rem 1rem;
-  }
-  /* --- Head Section Starts Here --- */
-  section .head{
+}
+
+/* --- Head Section Starts Here --- */
+section .head {
     display: flex;
     background-color: white;
     padding: 0.5rem 1rem;
@@ -169,44 +172,51 @@ form{
     margin-bottom: 1rem;
     overflow: hidden;
     box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
-  }
+}
 
-  section .head .head-content{
+section .head .head-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 500;
     cursor: pointer;
-  }
+}
 
-  /* --- Head Section Ends Here --- */
+section .head .head-content img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
 
-  /* --- Suggested Products Section Starts Here --- */
-  .suggested-products{
+/* --- Head Section Ends Here --- */
+
+/* --- Suggested Products Section Starts Here --- */
+.suggested-products {
     background-color: white;
     padding: 1rem 1rem 0 1rem;
     margin-top: 1rem;
     box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
-  }
+}
 
-  .suggested-products a{
+.suggested-products a {
     text-decoration: none;
     color: black;
-  }
+}
 
-  .suggested-products h5{
+.suggested-products h5 {
     font-size: 1.5rem;
     padding: 0 0 0.7rem 1rem;
-  }
-  .suggested-products .product-row {
+}
+
+.suggested-products .product-row {
     display: flex;
     gap: 2rem;
     padding: 0.2rem 1rem 0.3rem 1rem;
     overflow-x: scroll;
-  }
+}
 
-  .suggested-products .product-row div{
+.suggested-products .product-row div {
     background-color: rgb(249, 249, 249);
     padding: 1rem 1rem 0.3rem 1rem;
     display: flex;
@@ -214,194 +224,395 @@ form{
     align-items: center;
     box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
     cursor: pointer;
-  }
+}
 
-  .suggested-products .product-row div:hover{
+.suggested-products .product-row div:hover {
     background-color: white;
     box-shadow: 1px 2px 7px 1px rgba(126, 126, 126, 0.748);
-  }
+}
 
-  .suggested-products .product-row div img {
+.suggested-products .product-row div img {
+    width: 170px;
     height: 150px;
     object-fit: contain;
-  }
+}
 
-  .suggested-products .product-row div h6{
+.suggested-products .product-row div h6 {
     margin-top: 2.5rem;
     font-size: 1.1rem;
-  }
+}
 
-  .suggested-products .product-row div p{
+.suggested-products .product-row div p {
     font-size: 1.2rem;
     font-weight: 500;
     color: rgb(91, 91, 91);
-  }
-  /* --- Suggested Products Section Ends Here --- */
+}
+
+/* --- Suggested Products Section Ends Here --- */
 
 
-  /* --- All Products Section Starts Here --- */
-    .all-products{
-        background-color: white;
-        margin-top: 1.2rem;
-        padding: 1rem;
-        box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
-        overflow: hidden;
-    }
+/* --- All Products Section Starts Here --- */
+.all-products {
+    background-color: white;
+    margin-top: 1.2rem;
+    padding: 1rem;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+    overflow: hidden;
+}
 
-    .all-products a{
-        text-decoration: none;
-        color: black;
-      }
+.all-products a {
+    text-decoration: none;
+    color: black;
+}
 
-    .all-products h5{
-        font-size: 1.5rem;
-        padding: 0 0 0.7rem 1rem;
-    }
+.all-products h5 {
+    font-size: 1.5rem;
+    padding: 0 0 0.7rem 1rem;
+}
 
-    .all-products .all-products-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2.3rem;
-        padding: 0.2rem 1rem 0.3rem 1rem;
-    }
+.all-products .all-products-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.3rem;
+    padding: 0.2rem 1rem 0.3rem 1rem;
+}
 
-    .all-products .all-products-row .product{
-        background-color: rgb(249, 249, 249);
-        padding: 1rem 1rem 0.8rem 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
-        cursor: pointer;
-    }
+.all-products .all-products-row .product {
+    background-color: rgb(249, 249, 249);
+    padding: 1rem 1rem 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+    cursor: pointer;
+}
 
-    .all-products .all-products-row .product:hover{
-        background-color: white;
-        box-shadow: 1px 2px 7px 1px rgba(89, 89, 89, 0.748);
+.all-products .all-products-row .product:hover {
+    background-color: white;
+    box-shadow: 1px 2px 7px 1px rgba(89, 89, 89, 0.748);
+}
+
+.all-products .all-products-row .product img {
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.all-products .all-products-row .product h6 {
+    padding: 0 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    max-width: 290px;
+}
+
+.all-products .all-products-row .product span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(91, 91, 91);
+}
+
+/* --- All Products Section Ends Here --- */
+
+
+
+
+/* --- Media Queries --- */
+
+@media screen and (min-width: 992px) and (max-width: 1170px) {
+
+    /* --- Media for All Products Section --- */
+    .all-products .all-products-row .product {
+        width: 270px;
     }
 
     .all-products .all-products-row .product img {
         height: 200px;
-        width: 300px;
+        width: 220px;
         object-fit: contain;
     }
+}
 
-    .all-products .all-products-row .product h6{
-        padding: 0 1rem;
-        margin-top: 1.5rem;
-        font-size: 1.2rem;
-        max-width: 290px;
-    }
-    
-      .all-products .all-products-row .product span{
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: rgb(91, 91, 91);
-    }
-  /* --- All Products Section Ends Here --- */
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
-
-
-
-  /* --- Media Queries --- */
-
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-
-    nav{
+    /* --- Media for Navbar --- */
+    nav {
         padding: 0 3%;
     }
-    .nav-left .logo{
+
+    .nav-left .logo {
         margin-right: 1rem;
         font-size: 1.4rem;
     }
-    .nav-left #searchInput{
+
+    .nav-left #searchInput {
         width: 34vw;
         padding: 0 0.5rem;
     }
-    .nav-left form i{
+
+    .nav-left form i {
         font-size: 1.4rem;
         padding: 0 0.5rem 0 0;
     }
-    .nav-right span{
+
+    .nav-right span {
         margin-left: 1.5rem;
         font-size: 1.1rem;
     }
-    .nav-menu{
+
+    .nav-menu {
         position: absolute;
         right: 4.2%;
     }
 
-  }
+    /* --- Media for Head Section --- */
+    section .head .head-content {
+        font-size: 0.9rem;
+    }
 
-  /* ---------------------------------------------- */
+    section .head .head-content img {
+        width: 50px;
+        height: 50px;
+    }
 
-  @media screen and (min-width: 576px) and (max-width: 768px) {
+    /* --- Media for All Products Section --- */
+    .all-products .all-products-row .product img {
+        height: 200px;
+        width: 260px;
+    }
 
-    nav{
+    .all-products .all-products-row .product h6 {
+        font-size: 1.2rem;
+        max-width: 270px;
+    }
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    /* --- Media for Navbar --- */
+    nav {
         padding: 0 3%;
     }
-    .nav-left .logo{
+
+    .nav-left .logo {
         margin-right: 1.2rem;
         font-size: 1.4rem;
     }
-    .nav-left .logo span{
+
+    .nav-left .logo span {
         display: none;
     }
-    .nav-left #searchInput{
+
+    .nav-left #searchInput {
         width: 42vw;
         padding: 0 0.5rem;
     }
-    .nav-left form i{
+
+    .nav-left form i {
         font-size: 1.3rem;
         padding: 0 0.7rem 0 0;
     }
-    .nav-right span{
+
+    .nav-right span {
         margin-left: 1.2rem;
         font-size: 1.1rem;
     }
-    .nav-menu{
+
+    .nav-menu {
         position: absolute;
         right: 3.6%;
     }
 
-  }
+    /* --- Media for Head Section --- */
+    section .head .head-content {
+        font-size: 0.7rem;
+    }
 
-  /* ---------------------------------------------- */
+    section .head .head-content img {
+        width: 40px;
+        height: 40px;
+    }
 
-  @media screen and (max-width: 576px) {
-    nav{
+    /* --- Media for Suggested Products Section --- */
+    .suggested-products .product-row div img {
+        width: 130px;
+        height: 80px;
+    }
+
+    .suggested-products h5 {
+        font-size: 1.3rem;
+    }
+
+    .suggested-products .product-row div h6 {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .suggested-products .product-row div p {
+        font-size: 1rem;
+    }
+
+    /* --- Media for All Products Section --- */
+    .all-products h5 {
+        font-size: 1.3rem;
+    }
+
+    .all-products .all-products-row .product {
+        width: 220px;
+    }
+
+    .all-products .all-products-row .product img {
+        height: 200px;
+        width: 170px;
+    }
+
+    .all-products .all-products-row .product h6 {
+        font-size: 1.1rem;
+        max-width: 200px;
+    }
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 576px) {
+    section {
+        padding: 0.7rem 0.3rem 0.5rem 0.3rem;
+    }
+
+    /* --- Media for Navbar --- */
+    nav {
         padding: 0 3.7%;
     }
-    nav .nav-right span{
+
+    nav .nav-right span {
         display: none;
     }
-    .nav-left .logo{
+
+    .nav-left .logo {
         margin-right: 1rem;
         font-size: 1.3rem;
     }
-    .nav-left .logo span{
+
+    .nav-left .logo span {
         display: none;
     }
-    .nav-left #searchInput{
+
+    .nav-left #searchInput {
         width: 55vw;
         padding: 0 0.5rem;
     }
-    .nav-left form i{
+
+    .nav-left form i {
         font-size: 1.2rem;
         padding: 0 0.7rem 0 0;
     }
-    .nav-right .fa-bars{
+
+    .nav-right .fa-bars {
         display: block;
         color: white;
         font-size: 1.4rem;
     }
-    .nav-menu{
+
+    .nav-menu {
         position: absolute;
         right: 2%;
     }
-    .nav-menu #tooltip{
+
+    .nav-menu #tooltip {
         position: absolute;
         left: 13.6rem;
-       }
+    }
 
-  }
+    /* --- Media for Head Section --- */
+    section .head {
+        padding: 0.2rem 0;
+    }
+
+    section .head .head-content {
+        font-size: 0.5rem;
+        font-weight: 400;
+    }
+
+    section .head .head-content img {
+        width: 20px;
+        height: 25px;
+    }
+
+    /* --- Media for Carousel --- */
+    .slide-image-div {
+        height: 14vh;
+    }
+
+    .slide-images {
+        height: 90px;
+    }
+
+    /* --- Media for Suggested Products Section --- */
+    .suggested-products {
+        padding: 1rem 0 0 0;
+    }
+
+    .suggested-products .product-row {
+        gap: 1rem;
+    }
+
+    .suggested-products .product-row div img {
+        width: 90px;
+        height: 50px;
+    }
+
+    .suggested-products h5 {
+        font-size: 1.1rem;
+        padding: 0 0 0.7rem 0.7rem;
+    }
+
+    .suggested-products .product-row div h6 {
+        margin-top: 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .suggested-products .product-row div p {
+        font-size: 0.7rem;
+    }
+
+    /* --- Media for All Products Section --- */
+    .all-products {
+        padding: 1rem 0;
+    }
+
+    .all-products .all-products-row {
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    .all-products .all-products-row .product {
+        padding: 1rem 0 0.8rem 0;
+        margin-top: 0.3rem;
+    }
+
+    .all-products h5 {
+        font-size: 1.1rem;
+        padding: 0 0 0.7rem 0.7rem;
+    }
+
+    .all-products .all-products-row .product {
+        width: 170px;
+    }
+
+    .all-products .all-products-row .product img {
+        height: 100px;
+        width: 160px;
+    }
+
+    .all-products .all-products-row .product h6 {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        font-weight: 400;
+    }
+
+    .all-products .all-products-row .product span {
+        font-size: 0.7rem;
+    }
+}
