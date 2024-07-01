@@ -234,7 +234,7 @@ section .container .details-box #order-btn:hover{
 /* --- Media Queries --- */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
+    /* --- Media for Navbar --- */
     nav {
         padding: 0 3%;
     }
@@ -269,7 +269,7 @@ section .container .details-box #order-btn:hover{
 /* ---------------------------------------------- */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-
+    /* --- Media for Navbar --- */
     nav {
         padding: 0 3%;
     }
@@ -308,6 +308,7 @@ section .container .details-box #order-btn:hover{
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 576px) {
+    /* --- Media for Navbar --- */
     nav {
         padding: 0 3.7%;
     }
