@@ -7,10 +7,14 @@ let layer = document.querySelector('.upper-layer');
 
 // --- Functionality for Menu Box Toggle
 function toggleBox(head, box) {
-  head.addEventListener("mouseenter", () => (box.style.display = "block"));
-  head.addEventListener("mouseleave", () => (box.style.display = "none"));
-  box.addEventListener("mouseenter", () => (box.style.display = "block"));
-  box.addEventListener("mouseleave", () => (box.style.display = "none"));
+  head.addEventListener("mouseenter", () => (box.style.zIndex = "10"));
+  head.addEventListener("mouseleave", () => (box.style.zIndex = "-5"));
+  head.addEventListener("mouseenter", () => (box.style.opacity = "1"));
+  head.addEventListener("mouseleave", () => (box.style.opacity = "0"));
+  box.addEventListener("mouseenter", () => (box.style.zIndex = "10"));
+  box.addEventListener("mouseleave", () => (box.style.zIndex = "-5"));
+  box.addEventListener("mouseenter", () => (box.style.opacity = "1"));
+  box.addEventListener("mouseleave", () => (box.style.opacity = "0"));
 }
 
 toggleBox(user, nav_menu);
@@ -29,11 +33,13 @@ toggleCaret(user, nav_menu, tooltip);
 
 // --- Functionality for Menu bars
 bars.addEventListener('click', function () {
-  nav_menu.style.display = "block";
+  nav_menu.style.zIndex = "10";
+  nav_menu.style.opacity = "1";
   layer.style.display = "block";
 })
 
 layer.addEventListener('click', function () {
   layer.style.display = 'none';
-  nav_menu.style.display = 'none';
+  nav_menu.style.opacity = '0';
+  nav_menu.style.zIndex = "-5";
 })
