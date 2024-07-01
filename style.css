@@ -265,7 +265,7 @@ form{
 
     .all-products .all-products-row .product:hover{
         background-color: white;
-        box-shadow: 1px 2px 7px 1px rgba(126, 126, 126, 0.748);
+        box-shadow: 1px 2px 7px 1px rgba(89, 89, 89, 0.748);
     }
 
     .all-products .all-products-row .product img {
