@@ -156,14 +156,15 @@ section .container {
     justify-content: space-between;
     overflow: hidden;
     margin: 1rem auto;
+    padding: 1.8rem 2rem 1.8rem 0;
     box-shadow: 0px 1px 20px 1px rgba(196, 196, 196, 0.748);
 }
 
 section .container .img-box img{
     width: 550px;
-    height: 500px;
-    margin-right: 5rem;
-    padding: 1.5rem 0;
+    height: 550px;
+    margin-right: 4rem;
+    padding: 2rem 0 2rem 1rem;
     object-fit: contain;
 }
 
@@ -179,6 +180,7 @@ section .container .details-box h5{
 
 section .container .details-box p{
     font-size: 1.3rem;
+    text-align: justify;
 }
 section .container .details-box p span{
     font-weight: 500;
@@ -188,15 +190,34 @@ section .container .details-box button{
     margin-top: 2rem;
     border: none;
     outline: none;
-    background-color: rgb(11, 163, 11);
-    color: white;
-    padding: 0.8rem 1.8rem;
-    font-size: 1.5rem;
     border-radius: 5px;
+    margin-right: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.7rem 1.5rem;
 }
 
-section .container .details-box button:hover{
-    background-color: rgb(4, 152, 4);
+section .container .details-box #cart-btn{
+    background-color: rgb(255, 191, 0);
+}
+
+section .container .details-box #wishlist-btn{
+    background-color: rgb(2, 170, 200);
+}
+section .container .details-box #order-btn{
+    background-color: rgb(11, 163, 11);
+}
+
+section .container .details-box #cart-btn:hover{
+    background-color: rgb(235, 177, 0);
+}
+
+section .container .details-box #wishlist-btn:hover{
+    background-color: rgb(0, 158, 186);
+}
+
+section .container .details-box #order-btn:hover{
+    background-color: rgb(3, 142, 3);
 }
 /* --- Hero Section Ends Here --- */
 
