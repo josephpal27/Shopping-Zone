@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/* Edit Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(199, 161, 235);
+}
+
+main .product-container::-webkit-scrollbar {
+    width: 0;
+}
+
+main .product-container::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* --- Navbar Starts here --- */
+.upper-layer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    /* background: rgba(0, 0, 0, 0.068); */
+    z-index: 5;
+}
+
+nav {
+    background-color: rgb(152, 23, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.98%;
+}
+
+.my-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left a {
+    text-decoration: none;
+}
+
+.nav-left .logo {
+    margin-right: 4rem;
+    padding: 0.6rem 0;
+    color: white;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.nav-left #searchInput {
+    width: 30vw;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+}
+
+.nav-left form i {
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    color: rgb(169, 44, 232);
+}
+
+.nav-left form i:hover {
+    color: rgb(147, 19, 210);
+    transition: color 0.1s ease;
+}
+
+.nav-right {
+    padding: 0.5rem 0;
+}
+
+.nav-right span {
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.95rem 0;
+    cursor: pointer
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right .fa-bars {
+    display: none;
+}
+
+.nav-menu {
+    position: absolute;
+    right: 10%;
+    background-color: white;
+    width: max-content;
+    box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
+    z-index: -5;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-menu #tooltip {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -0.4rem;
+    left: 7rem;
+    transform: rotate(180deg);
+}
+
+.nav-menu #tooltip i {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.nav-menu .menu {
+    padding: 0.5rem 0 0.8rem 2rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav-menu .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 5rem 0.5rem 0;
+}
+
+.nav-menu .menu:hover {
+    background-color: rgb(242, 242, 242);
+    transition: background-color 0.1s ease;
+}
+
+.nav-menu i {
+    margin-right: 2rem;
+    color: rgb(169, 44, 232);
+}
+
+/* --- Navbar Ends here --- */
+
+/* --- Hero Section Starts Here --- */
+section {
+    background-color: rgb(241, 241, 241);
+    min-height: 90vh;
+}
+
+section .my-container {
+    padding: 1rem;
+}
+
+main {
+    width: 70%;
+    max-height: 88vh;
+    overflow: hidden;
+    align-self: self-start;
+    background-color: white;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+}
+
+main .cart-head {
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+main .cart-head h5 {
+    padding: 1rem 2rem;
+}
+
+main .product-container {
+    max-height: 80vh;
+    overflow-y: scroll;
+    /* background-color: red; */
+}
+
+main .product-container a{
+   text-decoration: none;
+   color: black;
+}
+
+main .cart-products {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+main .cart-products img {
+    margin: 1rem;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+main .cart-products .product-des {
+    padding: 1.5rem 0.5rem;
+}
+
+main .cart-products .product-des #title {
+    font-weight: 500;
+}
+
+main .cart-products .product-des #title,
+.price {
+    font-size: 1.4rem;
+}
+
+main .cart-products .product-des .count {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+main .cart-products .product-des .count #icn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+}
+
+main .cart-products .product-des .count #icn:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+main .cart-products .product-des .count .item-count {
+    width: 3rem;
+    text-align: center;
+    font-weight: 500;
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
+}
+
+main .cart-products .product-des .count button {
+    margin-left: 2rem;
+    border: none;
+    outline: none;
+    background-color: rgb(138, 28, 216);
+    color: white;
+    padding: 0.2rem 0.8rem;
+}
+
+main .cart-products .product-des .count button:hover {
+    background-color: rgb(102, 11, 187);
+}
+
+main .cart-products:hover #title {
+    color: rgb(123, 28, 212);
+}
+
+aside {
+    width: 28.5%;
+    background-color: white;
+    align-self: self-start;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+    overflow: hidden;
+}
+
+aside .details #details-head {
+    border-bottom: 1px solid rgb(236, 236, 236);
+    padding: 1.4rem 2rem 0.7rem 2rem;
+}
+
+aside .details #details-head h6 {
+    font-size: 1.3rem;
+    color: rgb(129, 129, 129);
+}
+
+aside .details #details-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+aside .details #details-body div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+}
+
+aside .details #details-foot {
+    padding: 1rem 2rem 0.9rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+aside .details #details-foot div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside .details #details-foot span {
+    margin-bottom: 0.48rem;
+}
+
+aside .details #btn {
+    padding: 1rem 2rem 0.9rem 2rem;
+}
+
+aside .details #btn button {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: rgb(34, 179, 11);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+aside .details #btn button:hover {
+    background-color: rgb(16, 154, 12)
+}
+
+
+/* --- Hero Section Ends Here --- */
+
+
+
+
+/* --- Media Queries --- */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* --- Media for Aside Section --- */
+    aside .details #details-head {
+        padding: 1.4rem 1rem 0.7rem 1rem;
+    }
+    aside .details #details-body div {
+        padding: 0.5rem 1rem;
+    }
+    aside .details #details-foot {
+        padding: 1rem 1rem 0.9rem 1rem;
+        font-size: 1.2rem;
+    }
+    aside .details #details-foot h4{
+        font-size: 1.15rem;
+    }
+    aside .details #btn {
+        padding: 1rem 1rem 0.9rem 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* --- Media for Navbar --- */
+    nav {
+        padding: 0 3%;
+    }
+
+    .nav-left .logo {
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .nav-left #searchInput {
+        width: 34vw;
+        padding: 0 0.5rem;
+    }
+
+    .nav-left form i {
+        font-size: 1.4rem;
+        padding: 0 0.5rem 0 0;
+    }
+
+    .nav-right span {
+        margin-left: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: 4.2%;
+    }
+
+    /* --- Media for Main Section --- */
+    section .my-container {
+        padding: 0.5rem;
+    }
+
+    main .cart-head h5 {
+        padding: 0.8rem 0 0.6rem 1rem;
+        font-size: 1.2rem;
+    }
+    main .cart-products {
+        gap: 0.5rem;
+    }
+    
+    main .cart-products img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    main .cart-products .product-des #title,
+    .price {
+        font-size: 1.1rem;
+    }
+    
+    main .cart-products .product-des .count {
+        gap: 0.7rem;
+        margin-top: 1.2rem;
+    }
+    
+    main .cart-products .product-des .count #icn {
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+    }
+    
+    main .cart-products .product-des .count .item-count {
+        width: 2.5rem;
+    }
+    
+    main .cart-products .product-des .count button {
+        margin-left: 1.5rem;
+        padding: 0.1rem 0.6rem;
+    }
+   
+    
+    /* --- Media for Aside Section --- */
+    aside .details #details-head {
+        padding: 1rem 0.6rem 0.5rem 0.6rem;
+    }
+    aside .details #details-head h6 {
+        font-size: 1.1rem;
+    }
+    aside .details #details-body div {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.9rem;
+    }
+    aside .details #details-foot {
+        padding: 1rem 0.6rem 0.9rem 0.6rem;
+        font-size: 1rem;
+    }
+    aside .details #details-foot h4{
+        font-size: 1rem;
+    }
+    aside .details #btn {
+        padding: 1rem 0.6rem 0.9rem 0.6rem;
+    }
+    aside .details #btn button {
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* --- Media for Navbar --- */
+    nav {
+        padding: 0 3%;
+    }
+
+    .nav-left .logo {
+        margin-right: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .nav-left .logo span {
+        display: none;
+    }
+
+    .nav-left #searchInput {
+        width: 42vw;
+        padding: 0 0.5rem;
+    }
+
+    .nav-left form i {
+        font-size: 1.3rem;
+        padding: 0 0.7rem 0 0;
+    }
+
+    .nav-right span {
+        margin-left: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: 3.6%;
+    }
+
+    /* --- Media for Main Section --- */
+    section .my-container {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    main .cart-head h5 {
+        padding: 0.8rem 0 0.6rem 1rem;
+        font-size: 1.2rem;
+    }
+    main .cart-products {
+        gap: 0.4rem;
+    }
+    
+    main .cart-products img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    main .cart-products .product-des #title,
+    .price {
+        font-size: 1.1rem;
+    }
+    
+    main .cart-products .product-des .count {
+        gap: 0.7rem;
+        margin-top: 1.2rem;
+    }
+    
+    main .cart-products .product-des .count #icn {
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+    }
+    
+    main .cart-products .product-des .count .item-count {
+        width: 2.5rem;
+    }
+    
+    main .cart-products .product-des .count button {
+        margin-left: 1.5rem;
+        padding: 0.1rem 0.6rem;
+    }
+   
+    
+    /* --- Media for Aside Section --- */
+    aside{
+        width: 100%;
+        margin-top: 0.7rem;
+    }
+    aside .details #details-head {
+        padding: 1rem 1.5rem 0.5rem 1.5rem;
+    }
+    aside .details #details-head h6 {
+        font-size: 1.2rem;
+    }
+    aside .details #details-body div {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.2rem;
+    }
+    aside .details #details-foot {
+        padding: 1rem 1.5rem 0.9rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    aside .details #details-foot h4{
+        font-size: 1.5rem;
+    }
+    aside .details #btn {
+        padding: 1rem 1.5rem 0.9rem 1.5rem;
+    }
+    aside .details #btn button {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+/* ---------------------------------------------- */
+/* --- Media for Navbar --- */
+@media screen and (max-width: 576px) {
+    /* --- Media for Navbar --- */
+    nav {
+        padding: 0 3.7%;
+    }
+
+    nav .nav-right span {
+        display: none;
+    }
+
+    .nav-left .logo {
+        margin-right: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .nav-left .logo span {
+        display: none;
+    }
+
+    .nav-left #searchInput {
+        width: 55vw;
+        padding: 0 0.5rem;
+    }
+
+    .nav-left form i {
+        font-size: 1.2rem;
+        padding: 0 0.7rem 0 0;
+    }
+
+    .nav-right .fa-bars {
+        display: block;
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .nav-menu {
+        position: absolute;
+        right: 2%;
+    }
+
+    .nav-menu #tooltip {
+        position: absolute;
+        left: 13.6rem;
+    }
+
+
+    /* --- Media for Main Section --- */
+    section .my-container {
+        padding: 0.3rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    main .cart-head h5 {
+        padding: 0.8rem 0 0.6rem 1rem;
+        font-size: 1.2rem;
+    }
+    main .cart-products {
+        gap: 0.4rem;
+    }
+    
+    main .cart-products img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    main .cart-products .product-des #title,
+    .price {
+        font-size: 1.1rem;
+    }
+    
+    main .cart-products .product-des .count {
+        gap: 0.7rem;
+        margin-top: 1.2rem;
+    }
+    
+    main .cart-products .product-des .count #icn {
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+    }
+    
+    main .cart-products .product-des .count .item-count {
+        width: 2.5rem;
+    }
+    
+    main .cart-products .product-des .count button {
+        margin-left: 1.5rem;
+        padding: 0.1rem 0.6rem;
+    }
+   
+    
+    /* --- Media for Aside Section --- */
+    aside{
+        width: 100%;
+        margin-top: 0.7rem; 
+    }
+    aside .details #details-head {
+        padding: 1rem 1.1rem 0.5rem 1.1rem;
+    }
+    aside .details #details-head h6 {
+        font-size: 1.2rem;
+    }
+    aside .details #details-body div {
+        padding: 0.5rem 1.1rem;
+        font-size: 1.2rem;
+    }
+    aside .details #details-foot {
+        padding: 1rem 1.1rem 0.9rem 1.1rem;
+        font-size: 1.5rem;
+    }
+    aside .details #details-foot h4{
+        font-size: 1.5rem;
+    }
+    aside .details #btn {
+        padding: 1rem 1.1rem 0.9rem 1.1rem;
+    }
+    aside .details #btn button {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.2rem;
+    }
+
+}

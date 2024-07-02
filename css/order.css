@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.2s ease;
+    transition: all 0.15s ease;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Edit Scroll Bar */
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -15,7 +19,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: blueviolet;
+    background: rgb(199, 161, 235);
+}
+
+main .all-orders::-webkit-scrollbar {
+    width: 0;
 }
 
 /* --- Navbar Starts here --- */
@@ -159,175 +167,134 @@ form {
 section {
     background-color: rgb(241, 241, 241);
     min-height: 90vh;
+    padding: 1.2rem 0;
 }
 
-section .container {
-    padding: 1rem;
-}
-
-main {
-    width: 70%;
-    max-height: 88vh;
-    overflow: hidden;
+section .container aside {
+    width: 20%;
     background-color: white;
+    padding: 0 2rem;
+    align-self: self-start;
+    overflow: hidden;
     box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
 }
 
-/* .product-container:hover::-webkit-scrollbar {
-        width: 5px;
-    } */
-
-main .cart-head {
-    border-bottom: 1px solid rgb(224, 224, 224);
+section .container aside h5 {
+    padding: 0.7rem 0 0.5rem 0;
+    font-size: 1.5rem;
 }
 
-main .cart-head h5 {
-    padding: 1rem 2rem;
+section .container aside h6 {
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
 }
 
-main .product-container {
-    max-height: 80vh;
-    overflow-y: scroll;
+section .container aside .filter-options {
+    margin-bottom: 1.1rem;
 }
 
-main .cart-products {
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
-    border-bottom: 1px solid rgb(236, 236, 236);
-}
-
-main .cart-products img {
-    margin: 1rem;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-main .cart-products .product-des {
-    padding: 1.5rem 0.5rem;
-}
-
-main .cart-products .product-des #title {
+section .container aside .filter-options span {
     font-weight: 500;
+    margin-left: 0.3rem;
 }
 
-main .cart-products .product-des #title,
-.price {
-    font-size: 1.4rem;
-}
-
-main .cart-products .product-des .count {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-main .cart-products .product-des .count #icn {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    background-color: rgb(239, 239, 239);
-}
-
-main .cart-products .product-des .count #icn:hover {
-    background-color: rgb(231, 231, 231);
-}
-
-main .cart-products .product-des .count .item-count {
-    width: 3rem;
-    text-align: center;
-    font-weight: 500;
-    background-color: rgb(239, 239, 239);
-    border-radius: 5px;
-}
-
-main .cart-products .product-des .count button {
-    margin-left: 2rem;
+section .container #apply-btn {
     border: none;
     outline: none;
-    background-color: rgb(138, 28, 216);
+    padding: 0.4rem 0.8rem;
+    background-color: rgb(16, 180, 16);
     color: white;
-    padding: 0.2rem 0.8rem;
+    margin-bottom: 1.2rem;
 }
 
-main .cart-products .product-des .count button:hover {
-    background-color: rgb(102, 11, 187);
+section .container #apply-btn:hover {
+    background-color: rgb(9, 163, 9);
 }
 
-main .cart-products:hover #title {
-    color: rgb(123, 28, 212);
-}
-
-aside {
-    width: 28.5%;
-    background-color: white;
-    align-self: self-start;
-    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
-    overflow: hidden;
-}
-
-aside .details #details-head {
-    border-bottom: 1px solid rgb(236, 236, 236);
-    padding: 1.4rem 2rem 0.7rem 2rem;
-}
-
-aside .details #details-head h6 {
-    font-size: 1.3rem;
-    color: rgb(129, 129, 129);
-}
-
-aside .details #details-body {
+section .container main {
+    width: 78.5%;
+    max-height: 88.5vh;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgb(236, 236, 236);
 }
 
-aside .details #details-body div {
+section .container main .search-box {
     display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
-    font-weight: 500;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
-aside .details #details-foot {
-    padding: 1rem 2rem 0.9rem 2rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border-bottom: 1px solid rgb(236, 236, 236);
+section .container main .search-box input {
+    width: 70%;
+    padding: 0.5rem;
+    border: none;
+    outline: 2px solid rgb(201, 201, 201);
+    transition: none;
 }
 
-aside .details #details-foot div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+section .container main .search-box input:focus {
+    border: none;
+    outline: 3px solid rgb(15, 210, 8);
 }
 
-aside .details #details-foot span {
-    margin-bottom: 0.48rem;
-}
-
-aside .details #btn {
-    padding: 1rem 2rem 0.9rem 2rem;
-}
-
-aside .details #btn button {
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    background-color: rgb(34, 179, 11);
-    color: white;
+section .container main .search-box button {
+    padding: 0.5rem;
     border: none;
     outline: none;
+    background-color: rgb(17, 196, 17);
+    color: white;
 }
 
-aside .details #btn button:hover {
-    background-color: rgb(16, 154, 12)
+section .container main .search-box button:hover {
+    background-color: rgb(11, 175, 11);
 }
 
+section .container main .all-orders {
+    overflow-y: scroll;
+    margin-top: 1.2rem;
+}
+
+section .container main .orders {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    padding: 0 2rem 0 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+}
+
+section .container main .orders:hover {
+    box-shadow: 1px 2px 7px 1px rgba(87, 87, 87, 0.748);
+    color: blueviolet;
+}
+
+section .container main .orders .img-div {
+    width: 18%;
+}
+
+section .container main .orders .price {
+    width: 22%;
+    text-align: center;
+}
+
+section .container main .orders img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0.6rem 0;
+}
+
+section .container main .orders .title {
+    width: 50%;
+}
+
+section .container main .orders h6 {
+    font-size: 1.3rem;
+}
 
 /* --- Hero Section Ends Here --- */
 
