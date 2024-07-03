@@ -24,12 +24,11 @@
 
 /* --- Navbar Starts here --- */
 .upper-layer {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     display: none;
-    /* background: rgba(0, 0, 0, 0.068); */
-    z-index: 5;
+    z-index: 4;
 }
 
 nav {
@@ -38,6 +37,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 7.98%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .container {
@@ -110,7 +113,7 @@ form {
 }
 
 .nav-menu {
-    position: absolute;
+    position: fixed;
     right: 10%;
     background-color: white;
     width: max-content;
@@ -365,7 +368,6 @@ section .head .head-content img {
     }
 
     .nav-menu {
-        position: absolute;
         right: 4.2%;
     }
 
@@ -425,7 +427,6 @@ section .head .head-content img {
     }
 
     .nav-menu {
-        position: absolute;
         right: 3.6%;
     }
 
@@ -520,7 +521,6 @@ section .head .head-content img {
     }
 
     .nav-menu {
-        position: absolute;
         right: 2%;
     }
 
