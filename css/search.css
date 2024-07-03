@@ -22,6 +22,10 @@ a {
     background: rgb(199, 161, 235);
 }
 
+section main .products::-webkit-scrollbar {
+    width: 0;
+}
+
 /* --- Navbar Starts here --- */
 .upper-layer {
     position: fixed;
@@ -41,12 +45,6 @@ nav {
     top: 0;
     left: 0;
     z-index: 3;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .nav-left {
@@ -161,6 +159,138 @@ form {
 }
 
 /* --- Navbar Ends here --- */
+
+
+/* --- Hero Section Starts Here --- */
+section {
+    background-color: rgb(241, 241, 241);
+    min-height: 90vh;
+    padding: 1.2rem 0;
+}
+
+section .my-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+section .my-container aside {
+    width: 15%;
+    background-color: white;
+    padding: 0 2rem;
+    align-self: self-start;
+    overflow: hidden;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+}
+
+section .my-container aside h5 {
+    padding: 0.7rem 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+section .my-container aside h6 {
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+}
+
+section .my-container aside .filter-options {
+    margin-bottom: 1.1rem;
+}
+
+section .my-container aside .filter-options span {
+    font-weight: 500;
+    margin-left: 0.3rem;
+}
+
+section .my-container #apply-btn {
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.8rem;
+    background-color: rgb(16, 180, 16);
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+section .my-container #apply-btn:hover {
+    background-color: rgb(9, 163, 9);
+}
+
+
+section main {
+    background-color: white;
+    width: 84%;
+    align-self: self-start;
+    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+    overflow: hidden;
+}
+
+section main .products{
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+
+section main .search-products {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 2px solid rgb(236, 236, 236);
+}
+
+section main .search-products img {
+    margin: 1rem;
+    width: 250px;
+    height: 220px;
+    object-fit: contain;
+}
+
+section main .product-des {
+    padding: 1rem 0;
+    max-width: 70%;
+    font-size: 1.3rem;
+}
+
+section main .product-des p {
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+section main .product-des:hover p {
+    color: rgb(135, 12, 197);
+}
+
+section main .product-des .rating {
+    background-color: rgb(0, 174, 0);
+    width: fit-content;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.1rem 0.6rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+section main .product-des #price {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+section main .product-des button {
+    border: none;
+    outline: none;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 1rem;
+}
+
+section main .product-des button:hover {
+    background-color: rgb(115, 22, 201);
+}
+/* --- Hero Section Ends Here --- */
 
 
 
