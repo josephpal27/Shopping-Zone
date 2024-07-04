@@ -41,7 +41,7 @@ section .my-container .head{
 }
 
 section .my-container .head h5{
-   font-size: 1.4rem;
+   font-size: 1.6rem;
 }
 
 section .my-container .head h5 span{
@@ -86,7 +86,7 @@ main .details input{
     margin-top: 2rem;
     height: 3rem;
     padding: 0 1rem;
-    outline: 1px solid blueviolet;
+    outline: 2px solid rgb(169, 125, 211);
     border: none;
 }
 
@@ -125,7 +125,7 @@ main .details form a{
     background-color: blueviolet;
     border-top-left-radius: 40% 80%;
     border-top-right-radius: 40% 80%;
-    animation: fadeIn2 0.5s ease-in-out;
+    animation: fadeIn2 1s ease-in-out;
 }
 
 
