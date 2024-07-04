@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.15s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Edit Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(199, 161, 235);
+}
+
+section main .products::-webkit-scrollbar {
+    width: 0;
+}
+
+/* --- Navbar Starts here --- */
+.upper-layer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 4;
+}
+
+nav {
+    background-color: rgb(152, 23, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.98%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left a {
+    text-decoration: none;
+}
+
+.nav-left .logo {
+    margin-right: 4rem;
+    padding: 0.6rem 0;
+    color: white;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.nav-left #searchInput {
+    width: 30vw;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+}
+
+.nav-left form i {
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    color: rgb(169, 44, 232);
+}
+
+.nav-left form i:hover {
+    color: rgb(147, 19, 210);
+    transition: color 0.1s ease;
+}
+
+.nav-right {
+    padding: 0.5rem 0;
+}
+
+.nav-right span {
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.95rem 0;
+    cursor: pointer
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right .fa-bars {
+    display: none;
+}
+
+.nav-menu {
+    position: fixed;
+    right: 10%;
+    background-color: white;
+    width: max-content;
+    box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
+    z-index: -5;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-menu #tooltip {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -0.4rem;
+    left: 7rem;
+    transform: rotate(180deg);
+}
+
+.nav-menu #tooltip i {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.nav-menu .menu {
+    padding: 0.5rem 0 0.8rem 2rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav-menu .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 5rem 0.5rem 0;
+}
+
+.nav-menu .menu:hover {
+    background-color: rgb(242, 242, 242);
+    transition: background-color 0.1s ease;
+}
+
+.nav-menu i {
+    margin-right: 2rem;
+    color: rgb(169, 44, 232);
+}
+
+/* --- Navbar Ends here --- */
+
+
+
+
+
+
+
+
+/* --- Media Queries --- */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* --- Media For Navbar --- */
+    nav {
+      padding: 0 3%;
+    }
+  
+    .nav-left .logo {
+      margin-right: 1rem;
+      font-size: 1.4rem;
+    }
+  
+    .nav-left #searchInput {
+      width: 34vw;
+      padding: 0 0.5rem;
+    }
+  
+    .nav-left form i {
+      font-size: 1.4rem;
+      padding: 0 0.5rem 0 0;
+    }
+  
+    .nav-right span {
+      margin-left: 1.5rem;
+      font-size: 1.1rem;
+    }
+  
+    .nav-menu {
+      right: 4.2%;
+    }
+  
+  }
+  
+  /* ---------------------------------------------- */
+  
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    /* --- Media For Navbar --- */
+    nav {
+      padding: 0 3%;
+    }
+  
+    .nav-left .logo {
+      margin-right: 1.2rem;
+      font-size: 1.4rem;
+    }
+  
+    .nav-left .logo span {
+      display: none;
+    }
+  
+    .nav-left #searchInput {
+      width: 42vw;
+      padding: 0 0.5rem;
+    }
+  
+    .nav-left form i {
+      font-size: 1.3rem;
+      padding: 0 0.7rem 0 0;
+    }
+  
+    .nav-right span {
+      margin-left: 1.2rem;
+      font-size: 1.1rem;
+    }
+  
+    .nav-menu {
+      right: 3.6%;
+    }
+  
+  }
+  
+  /* ---------------------------------------------- */
+  
+  @media screen and (max-width: 576px) {
+    /* --- Media For Navbar --- */
+    nav {
+      padding: 0 3.7%;
+    }
+  
+    nav .nav-right span {
+      display: none;
+    }
+  
+    .nav-left .logo {
+      margin-right: 1rem;
+      font-size: 1.3rem;
+    }
+  
+    .nav-left .logo span {
+      display: none;
+    }
+  
+    .nav-left #searchInput {
+      width: 55vw;
+      padding: 0 0.5rem;
+    }
+  
+    .nav-left form i {
+      font-size: 1.2rem;
+      padding: 0 0.7rem 0 0;
+    }
+  
+    .nav-right .fa-bars {
+      display: block;
+      color: white;
+      font-size: 1.4rem;
+    }
+  
+    .nav-menu {
+      right: 2%;
+    }
+  
+    .nav-menu #tooltip {
+      position: absolute;
+      left: 13.6rem;
+    }
+  
+  }
