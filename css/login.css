@@ -91,7 +91,7 @@ main .details input{
 }
 
 main .details input:focus{
-    outline: 2px solid blueviolet;
+    outline: 3px solid blueviolet;
     transition: none;
 }
 
