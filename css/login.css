@@ -1,0 +1,155 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+transition: all 0.2s ease;
+}
+
+/* Edit Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(199, 161, 235);
+}
+
+
+/* --- Hero Section Starts Here --- */
+section{
+    background-color: rgb(215, 215, 215);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+section .my-container{
+    background-color: white;
+    padding: 1.5rem 3rem;
+    box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
+    border-radius: 10px;
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 5;
+}
+section .my-container .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+section .my-container .head h5{
+   font-size: 1.4rem;
+}
+
+section .my-container .head h5 span{
+   color: blueviolet; 
+}
+
+section .my-container .head span a{
+   color: blueviolet;
+   text-decoration: none;   
+   font-weight: 500;
+}
+
+main{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+main .img-div{
+    max-width: 50%;
+}
+
+main .img-div img{
+    width: 600px;
+    height: 480px;
+    object-fit: contain;
+}
+
+main .details {
+    width: 35%;
+}
+
+main .details h5{
+   font-size: 1.4rem;
+}
+main .details p{
+   color: rgb(86, 86, 86);
+}
+
+main .details input{
+    width: 100%;
+    margin-top: 2rem;
+    height: 3rem;
+    padding: 0 1rem;
+    outline: 1px solid blueviolet;
+    border: none;
+}
+
+main .details input:focus{
+    outline: 2px solid blueviolet;
+    transition: none;
+}
+
+main .details button{
+    margin-top: 3rem;
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+main .details button:hover{
+    background-color: rgb(109, 19, 193);
+}
+
+main .details form a{
+    text-decoration: none;
+    margin-left: 4rem;
+    color: rgb(94, 94, 94);
+}
+
+
+.back{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 65vh;
+    background-color: blueviolet;
+    border-top-left-radius: 40% 80%;
+    border-top-right-radius: 40% 80%;
+    animation: fadeIn2 0.5s ease-in-out;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+    to {
+        opacity: 1;
+        height: 65vh;
+    }
+}
+
+/* --- Hero Section Ends Here --- */
