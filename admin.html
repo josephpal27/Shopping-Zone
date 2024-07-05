@@ -14,9 +14,11 @@
     <div class="upper-layer"> </div>
     <nav id="navbar">
               <div class="nav-left">
-                <a href="index.html">
-                    <h4 class="logo"><i class="fa-solid fa-truck-fast"></i> <span>Shopping Zone</span></h4>
-                </a>
+                  <h4 class="logo">
+                    <a href="index.html"><i class="fa-solid fa-truck-fast"></i></a> 
+                    <a href="admin.html"><span>Admin Panel</span></a>
+                  </h4>
+                
                 <form action="">
                   <input type="search" name="searchInput" placeholder="Search for Products, brands and more" id="searchInput" />
                   <div>
@@ -59,7 +61,62 @@
 
 
       <!-- Hero Section Starts Here -->
-       
+       <section>
+        <div class="container-xl my-container">
+          <aside>
+            <h5>Admin Controls</h5>
+            <div class="controls">
+              <ul>
+                <li class="active">Add Products</li>
+                <li>Update Products</li>
+                <li>Delete Products</li>
+                <li>Add Category</li>
+                <li>Delete Category</li>
+              </ul>
+            </div>
+          </aside>
+
+          <main>
+            <!-- Add Products Content -->
+            <div class="add-products-content my-content-box">
+              <h2>Add Products</h2>
+              <div>
+                <form action="" method="POST">
+                  <div class="mt-4">
+                      <label for="product_name" class="form-label">Product Name</label>
+                      <input type="text" class="form-control" id="product_name" name="product_name" required placeholder="Enter Product Name" style="width: 40vw;">
+                  </div> 
+                  <div class="mt-4">
+                      <label for="product_price" class="form-label">Product Price</label>
+                      <input type="number" class="form-control" id="product_price" name="product_price" required placeholder="Enter Product Price" style="width: 40vw;">
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+
+            <!-- Update Products Content -->
+            <div class="update-products-content my-content-box">
+              <h2>Update Products</h2>
+            </div>
+
+            <!-- Delete Products Content -->
+            <div class="delete-products-content my-content-box">
+              <h2>Delete Products</h2>
+            </div>
+
+            <!-- Add Category Content -->
+            <div class="add-category-content my-content-box">
+              <h2>Add Category</h2>
+            </div>
+
+            <!-- Delete Category Content -->
+            <div class="delete-category-content my-content-box">
+              <h2>Delete Category</h2>
+            </div>
+          </main>
+        </div>
+       </section>
       <!-- Hero Section Ends Here -->
 
 
@@ -134,6 +191,7 @@
     
     
     <script src="js/nav.js"></script>
+    <script src="js/admin.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
