@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.15s ease;
+    transition: all 0.2s ease;
 }
 
 a {
@@ -20,6 +20,10 @@ a {
 
 ::-webkit-scrollbar-thumb {
     background: rgb(199, 161, 235);
+}
+
+main::-webkit-scrollbar {
+  width: 0;
 }
 
 section main .products::-webkit-scrollbar {
@@ -209,9 +213,36 @@ main .my-content-box{
   padding: 1rem 2rem;
 }
 
+main .my-content-box h2{
+  text-align: center;
+}
+
 main .my-content-box form{
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-products-content form label{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.add-products-content form input{
+  width: 50vw;
+  border: 1px solid blueviolet;
+}
+.add-products-content form button{
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+.add-products-content form button:hover{
+  background-color: rgb(110, 18, 196);
 }
 
 /* --- Hero Section Ends Here --- */
