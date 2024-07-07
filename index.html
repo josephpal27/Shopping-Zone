@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -61,27 +62,27 @@
       <section> 
         <!-- Head Section Starts Here -->
         <div class="head">
-            <div class="head-content">
+            <div class="head-content" data-aos="zoom-in">
                 <img src="images/head1.webp" alt="Image">
                 <span>Smartphones</span>
             </div>
-            <div class="head-content">
+            <div class="head-content" data-aos="zoom-in">
                 <img src="images/head3.webp" alt="Image">
                 <span>Home & Furniture</span>
             </div>
-            <div class="head-content">
+            <div class="head-content" data-aos="zoom-in">
                 <img src="images/head4.webp" alt="Image">
                 <span>Electronics</span>
             </div>
-            <div class="head-content">
+            <div class="head-content" data-aos="zoom-in">
                 <img src="images/head5.webp" alt="Image">
                 <span>Fashion</span>
             </div>
-            <div class="head-content">
+            <div class="head-content" data-aos="zoom-in">
                 <img src="images/head6.webp" alt="Image">
                 <span>Toys & More</span>
             </div>
-            <div class="head-content">
+            <div class="head-content" data-aos="zoom-in">
                 <img src="images/head7.webp" alt="Image">
                 <span>Appliances</span>
             </div>
@@ -122,7 +123,9 @@
             <div>
                 <h5>Suggested For You</h5>
             </div>
-            <div class="product-row">
+            <button class="slide-left"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="slide-right"><i class="fa-solid fa-angle-right"></i></button>
+            <div class="product-row" data-aos="fade-right">
                 <!-- Products -->
                 <a href="product_details.html"> 
                   <div>
@@ -339,7 +342,13 @@
 
 
     <script src="js/nav.js"></script>
+    <script src="js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

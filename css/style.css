@@ -216,6 +216,28 @@ section .head .head-content img {
     padding: 0 0 0.7rem 1rem;
 }
 
+.suggested-products button{
+    padding: 0.8rem 0.5rem;
+    position: absolute;
+    margin-top: 7rem;
+    border: none;
+    font-size: 1.3rem;
+    z-index: 1;
+}
+
+.suggested-products button:hover{
+   background-color: rgb(200, 200, 200);
+   color: white;
+}
+
+.suggested-products .slide-left{
+   left: 1rem;
+}
+
+.suggested-products .slide-right{
+   right: 1rem;
+}
+
 .suggested-products .product-row {
     display: flex;
     gap: 2rem;
@@ -459,6 +481,10 @@ section .head .head-content img {
         font-size: 1rem;
     }
 
+    .suggested-products button{
+       display: none;
+    }
+
     /* --- Media for All Products Section --- */
     .all-products h5 {
         font-size: 1.3rem;
@@ -580,6 +606,10 @@ section .head .head-content img {
     .suggested-products .product-row div p {
         font-size: 0.7rem;
     }
+
+    .suggested-products button{
+        display: none;
+     }
 
     /* --- Media for All Products Section --- */
     .all-products {

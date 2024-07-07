@@ -53,10 +53,6 @@ nav {
     justify-content: center;
 }
 
-.nav-left a {
-    text-decoration: none;
-}
-
 .nav-left .logo {
     margin-right: 4rem;
     padding: 0.6rem 0;
@@ -102,7 +98,6 @@ form {
 }
 
 .nav-right a {
-    text-decoration: none;
     color: white;
 }
 
@@ -143,7 +138,6 @@ form {
 }
 
 .nav-menu .menu a {
-    text-decoration: none;
     color: black;
     padding: 0.5rem 5rem 0.5rem 0;
 }
@@ -235,6 +229,10 @@ section main .search-products {
     align-items: center;
     gap: 1rem;
     border-bottom: 2px solid rgb(236, 236, 236);
+}
+
+section main .search-products a{
+    color: black;
 }
 
 section main .search-products img {
