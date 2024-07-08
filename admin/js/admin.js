@@ -34,13 +34,16 @@ let modalUpdateBtn = document.querySelector('#modal-update-btn');
 updateBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         updateModal.style.zIndex = '20';
+        updateModal.style.opacity = '1';
     })
 })
 
 closeBtn.addEventListener('click', () => {
     updateModal.style.zIndex = '-10';
+    updateModal.style.opacity = '-1';
 })
 
 modalUpdateBtn.addEventListener('click', () => {
     updateModal.style.zIndex = '-10';
+    updateModal.style.opacity = '-1';
 })

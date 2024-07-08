@@ -329,6 +329,8 @@ main .my-content-box form{
   position: fixed;
   top: 0;
   z-index: -10;
+  opacity: -1;
+  transition: opacity 0.2s ease-in-out;
 }
 .update-modal .modal-container{
   background-color: white;
@@ -354,7 +356,7 @@ main .my-content-box form{
   justify-content: space-between;
 }
 .update-modal .modal-container #my-div-2 #product_qua{
-  width: 33vw;
+  width: 34vw;
 }
 .update-modal .modal-container #my-div-2 #product_category{
   width: 39vw;
