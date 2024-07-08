@@ -117,7 +117,7 @@ form {
 
 .nav-menu {
     position: fixed;
-    right: 10%;
+    right: 4.5%;
     background-color: white;
     width: max-content;
     box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
@@ -230,6 +230,22 @@ main .my-content-box form{
   width: 50vw;
   border: 1px solid blueviolet;
 }
+
+.add-products-content form #my-div{
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-products-content form #product_qua{
+  width: 24vw;
+}
+
+.add-products-content form select{
+  width: 25vw;
+  border: 1px solid blueviolet;
+}
+
 .add-products-content form button{
   border: none;
   outline: none;
@@ -245,7 +261,119 @@ main .my-content-box form{
   background-color: rgb(110, 18, 196);
 }
 
+.my-content-box .product-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.my-content-box .product-row .product{
+  background-color: rgba(242, 242, 242, 0.523);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+}
+.my-content-box .product-row .product:hover{
+  background-color: white;
+}
+
+.my-content-box .product-row .product img{
+  width: 210px;
+  height: 150px;
+  object-fit: contain;
+  padding: 1rem;
+}
+.my-content-box .product-row .product h5{
+  font-size: 1rem;
+  padding: 0 1rem;
+  max-width: 210px;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.my-content-box .product-row .product h6{
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+.my-content-box .product-row .product button{
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  align-self: center;
+  margin: 1rem 0 0.7rem 0;
+}
+.my-content-box .product-row .product button:hover{
+  background-color: rgb(110, 18, 196);
+}
+.my-content-box .product-row .product #delete-btn{
+  background-color: rgb(225, 24, 24);
+}
+.my-content-box .product-row .product #delete-btn:hover{
+  background-color: rgb(254, 0, 0)
+}
+
 /* --- Hero Section Ends Here --- */
+
+/* --- Modal Section Starts Here --- */
+.update-modal{
+  display: flex;
+  align-items: center;
+  background-color: rgb(196, 196, 196);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -10;
+}
+.update-modal .modal-container{
+  background-color: white;
+  min-height: 90vh;
+  padding: 1rem 5rem;
+  border-radius: 10px;
+}
+
+.update-modal .modal-container label{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.update-modal .modal-container i{
+  color: red;
+  font-size: 2rem;
+  position: absolute;
+  top: 7.5%;
+  right: 8.5%;
+  cursor: pointer;
+}
+.update-modal .modal-container #my-div-2{
+  display: flex;
+  justify-content: space-between;
+}
+.update-modal .modal-container #my-div-2 #product_qua{
+  width: 33vw;
+}
+.update-modal .modal-container #my-div-2 #product_category{
+  width: 39vw;
+}
+
+#modal-update-btn {
+  border: none;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+#modal-update-btn:hover {
+  background-color: rgb(112, 17, 200);
+}
+/* --- Modal Section Ends Here --- */
 
 
 
@@ -283,7 +411,11 @@ main .my-content-box form{
     }
   
     .nav-menu {
-      right: 4.2%;
+      right: 3%;
+    }
+
+    .nav-menu #tooltip {
+      left: 10.5rem;
     }
   
   }
@@ -322,6 +454,10 @@ main .my-content-box form{
   
     .nav-menu {
       right: 3.6%;
+    }
+
+    .nav-menu #tooltip {
+      left: 10.7rem;
     }
   
   }
@@ -369,7 +505,7 @@ main .my-content-box form{
   
     .nav-menu #tooltip {
       position: absolute;
-      left: 13.6rem;
+      left: 12.2rem;
     }
   
   }

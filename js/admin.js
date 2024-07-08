@@ -1,4 +1,4 @@
-
+// --- Functionality for pertial page updates ---
 const listItems = document.querySelectorAll('.controls ul li');
 const contentBoxes = document.querySelectorAll('.my-content-box');
 
@@ -23,3 +23,24 @@ listItems.forEach((item, index) => {
         item.classList.add('active');
     });
 });
+
+
+// --- Functionality for modal ---
+let updateBtns = document.querySelectorAll('#update-btn');
+let updateModal = document.querySelector('.update-modal');
+let closeBtn = document.querySelector('.modal-container i');
+let modalUpdateBtn = document.querySelector('#modal-update-btn');
+
+updateBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        updateModal.style.zIndex = '20';
+    })
+})
+
+closeBtn.addEventListener('click', () => {
+    updateModal.style.zIndex = '-10';
+})
+
+modalUpdateBtn.addEventListener('click', () => {
+    updateModal.style.zIndex = '-10';
+})
