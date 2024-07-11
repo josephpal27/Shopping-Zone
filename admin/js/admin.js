@@ -31,6 +31,7 @@ let updateModal = document.querySelector('.update-modal');
 let closeBtn = document.querySelector('.modal-container i');
 let modalUpdateBtn = document.querySelector('#modal-update-btn');
 
+
 updateBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         updateModal.style.zIndex = '20';
