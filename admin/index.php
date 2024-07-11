@@ -16,14 +16,14 @@
     <nav id="navbar">
               <div class="nav-left">
                   <h4 class="logo">
-                    <a href="../index.html"><i class="fa-solid fa-truck-fast"></i></a> 
-                    <a href="index.html"><span>Admin Panel</span></a>
+                    <a href="../index.php"><i class="fa-solid fa-truck-fast"></i></a> 
+                    <a href="index.php"><span>Admin Panel</span></a>
                   </h4>
                 
                 <form action="">
                   <input type="search" name="searchInput" placeholder="Search for Products, brands and more" id="searchInput" />
                   <div>
-                    <a href="../search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="../search.php"><i class="fa-solid fa-magnifying-glass"></i></a>
                   </div>
                 </form>
               </div>
@@ -38,7 +38,7 @@
       <div class="nav-menu">
             <div id="tooltip"><i class="fa-solid fa-caret-down"></i></div>
             <div class="menu">
-              <a href="admin_profile.html"><i class="fa-solid fa-user"></i> <span>Profile</span></a>
+              <a href="admin_profile.php"><i class="fa-solid fa-user"></i> <span>Profile</span></a>
             </div>
             <div class="menu">
               <a href="#"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>

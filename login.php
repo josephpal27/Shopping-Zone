@@ -14,7 +14,7 @@
         <div class="container-xl my-container">
             <div class="head">
                 <h5><span>S</span>hopping Zone</h5>
-                <span>New User? <a href="signup.html">Sign Up</a></span>
+                <span>New User? <a href="signup.php">Sign Up</a></span>
             </div>
             <main>
                 <div class="img-div">

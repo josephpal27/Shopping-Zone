@@ -14,13 +14,13 @@
     <div class="upper-layer"> </div>
     <nav id="navbar">
           <div class="nav-left">
-            <a href="index.html">
+            <a href="index.php">
                 <h4 class="logo"><i class="fa-solid fa-truck-fast"></i> <span>Shopping Zone</span></h4>
             </a>
             <form action="">
               <input type="search" name="searchInput" placeholder="Search for Products, brands and more" id="searchInput" />
               <div>
-                <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="search.php"><i class="fa-solid fa-magnifying-glass"></i></a>
               </div>
             </form>
           </div>
@@ -28,7 +28,7 @@
             <span id="user">
               Joseph
               <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
-            <span><a href="cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
+            <span><a href="cart.php">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
             <i class="fa-solid fa-bars"></i>
           </div>
     </nav>
@@ -36,20 +36,20 @@
       <div class="nav-menu">
         <div id="tooltip"><i class="fa-solid fa-caret-down"></i></div>
         <div class="menu">
-          <a href="profile.html"><i class="fa-solid fa-user"></i> <span>My Profile</span></a>
+          <a href="profile.php"><i class="fa-solid fa-user"></i> <span>My Profile</span></a>
         </div>
         <div class="menu">
-          <a href="order.html"><i class="fa-solid fa-basket-shopping"></i> <span>Orders</span></a>
+          <a href="order.php"><i class="fa-solid fa-basket-shopping"></i> <span>Orders</span></a>
         </div>
         <div class="menu">
-          <a href="wishlist.html"><i class="fa-solid fa-hand-holding-heart"></i>
+          <a href="wishlist.php"><i class="fa-solid fa-hand-holding-heart"></i>
           <span>Wishlist</span></a>
         </div>
         <div class="menu">
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a>
+          <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a>
         </div>
         <div class="menu">
-            <a href="index.html"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
+            <a href="index.php"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
         </div>
         <div class="menu">
           <a href="#"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
@@ -75,7 +75,7 @@
             <div class="bottom">
               <div class="box">
                 <i class="fa-solid fa-basket-shopping"></i>
-                <span><a href="order.html">MY ORDERS</a></span>
+                <span><a href="order.php">MY ORDERS</a></span>
                 <i class="fa-solid fa-caret-right"></i>
               </div>
               <div class="account">
@@ -83,8 +83,8 @@
                 <span>ACCOUNT SETTINGS</span>
               </div>
               <div class="account-menu">
-                <p><a href="profile.html">Profile Information</a></p>
-                <p><a href="profile.html">Manage Addresses</a></p>
+                <p><a href="profile.php">Profile Information</a></p>
+                <p><a href="profile.php">Manage Addresses</a></p>
               </div>
               <div class="account">
                 <i class="fa-solid fa-credit-card"></i>

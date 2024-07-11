@@ -14,7 +14,7 @@
         <div class="container-xl my-container">
             <div class="head">
                 <h5><span>S</span>hopping Zone</h5>
-                <span>Already an User? <a href="login.html">Login</a></span>
+                <span>Already an User? <a href="login.php">Login</a></span>
             </div>
             <main>
                 <div class="img-div">
