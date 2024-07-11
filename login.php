@@ -24,7 +24,7 @@
                     <h5>Welcome Back!</h5>
                     <p>Login to Continue</p>
 
-                    <form action="" method="post">
+                    <form action="login.back.php" method="post">
                         <input type="text" name="username" placeholder="Username" required>
                         <input type="password" name="pass" placeholder="Password" required>
                         <div>

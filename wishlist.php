@@ -1,3 +1,10 @@
+<?php
+
+    require './components/userAuth.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,7 +64,7 @@
       <a href="index.php"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
     </div>
     <div class="menu">
-      <a href="#"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
+      <a href="logout.php"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
     </div>
   </div>
   <!-- Navbar Ends Here -->
@@ -102,7 +109,7 @@
           </div>
           <div class="box">
             <i class="fa-solid fa-power-off"></i>
-            <span><a href="">Logout</a></span>
+            <span><a href="logout.php">Logout</a></span>
           </div>
         </div>
       </aside>

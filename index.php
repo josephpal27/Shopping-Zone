@@ -53,7 +53,7 @@
             <a href="index.php"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
         </div>
         <div class="menu">
-          <a href="#"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
+          <a href="logout.php"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
         </div>
       </div>
       <!-- Navbar Ends Here -->

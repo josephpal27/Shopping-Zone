@@ -24,7 +24,7 @@
                     <h5>Welcome New User!</h5>
                     <p>Sign Up to Continue</p>
 
-                    <form action="" method="post">
+                    <form action="signup.back.php" method="post">
                         <input type="text" name="username" placeholder="Username" required>
                         <input type="password" name="pass" placeholder="Password" required>
                         <input type="password" name="c_pass" placeholder="Confirm Password" required>
