@@ -317,6 +317,34 @@ main .my-content-box form{
   background-color: rgb(254, 0, 0)
 }
 
+.all-orders-content h2{
+  margin-bottom: 1.7rem;
+}
+.my-content-box .order-row{
+  background-color: rgba(241, 241, 241, 0.567);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+}
+.my-content-box .order-row:hover{
+  box-shadow: 1px 2px 7px 1px rgba(149, 149, 149, 0.956);
+}
+.my-content-box .order-row img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 2rem;
+}
+.my-content-box .order-row .left{
+ display: flex;
+ max-width: 75%;
+}
+.my-content-box .order-row .left h4{
+ margin-bottom: 1rem;
+}
+
 /* --- Hero Section Ends Here --- */
 
 /* --- Modal Section Starts Here --- */
