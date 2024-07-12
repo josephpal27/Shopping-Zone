@@ -263,7 +263,6 @@ section main form{
   display: flex;
   flex-direction: column;
   align-items: start;
-  background-color: red;
 }
 
 section main .box {
