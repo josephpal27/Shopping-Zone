@@ -113,7 +113,11 @@
 
           <!-- Right Side -->
           <main>
+<<<<<<< HEAD:profile.html
+            <form action="" method="post">
+=======
           <form action="profile.back.php" method="post">
+>>>>>>> 6faba02484261709e6985fee411cde6e27c07c75:profile.php
             <div class="box">
                 <h5>Profile Information</h5>
                 <div>
