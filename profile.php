@@ -1,3 +1,10 @@
+<?php
+
+    require './components/userAuth.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +21,21 @@
     <div class="upper-layer"> </div>
     <nav id="navbar">
           <div class="nav-left">
-            <a href="index.html">
+            <a href="index.php">
                 <h4 class="logo"><i class="fa-solid fa-truck-fast"></i> <span>Shopping Zone</span></h4>
             </a>
             <form action="">
               <input type="search" name="searchInput" placeholder="Search for Products, brands and more" id="searchInput" />
               <div>
-                <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="search.php"><i class="fa-solid fa-magnifying-glass"></i></a>
               </div>
             </form>
           </div>
           <div class="nav-right">
             <span id="user">
-              Joseph
+            <?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?>
               <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
-            <span><a href="cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
+            <span><a href="cart.php">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
             <i class="fa-solid fa-bars"></i>
           </div>
     </nav>
@@ -36,23 +43,23 @@
       <div class="nav-menu">
         <div id="tooltip"><i class="fa-solid fa-caret-down"></i></div>
         <div class="menu">
-          <a href="profile.html"><i class="fa-solid fa-user"></i> <span>My Profile</span></a>
+          <a href="profile.php"><i class="fa-solid fa-user"></i> <span>My Profile</span></a>
         </div>
         <div class="menu">
-          <a href="order.html"><i class="fa-solid fa-basket-shopping"></i> <span>Orders</span></a>
+          <a href="order.php"><i class="fa-solid fa-basket-shopping"></i> <span>Orders</span></a>
         </div>
         <div class="menu">
-          <a href="wishlist.html"><i class="fa-solid fa-hand-holding-heart"></i>
+          <a href="wishlist.php"><i class="fa-solid fa-hand-holding-heart"></i>
           <span>Wishlist</span></a>
         </div>
         <div class="menu">
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a>
+          <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a>
         </div>
         <div class="menu">
-            <a href="index.html"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
+            <a href="index.php"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
         </div>
         <div class="menu">
-          <a href="#"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
+          <a href="logout.php"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
         </div>
       </div>
       <!-- Navbar Ends Here -->
@@ -69,13 +76,13 @@
               </div>
               <div>
                 <span id="greet">Hello,</span><br>
-                <span id="username">Joseph</span>
+                <span id="username"><?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?></span>
               </div>
             </div>
             <div class="bottom">
               <div class="box">
                 <i class="fa-solid fa-basket-shopping"></i>
-                <span><a href="order.html">MY ORDERS</a></span>
+                <span><a href="order.php">MY ORDERS</a></span>
                 <i class="fa-solid fa-caret-right"></i>
               </div>
               <div class="account">
@@ -83,8 +90,8 @@
                 <span>ACCOUNT SETTINGS</span>
               </div>
               <div class="account-menu">
-                <p><a href="profile.html">Profile Information</a></p>
-                <p><a href="profile.html">Manage Addresses</a></p>
+                <p><a href="profile.php">Profile Information</a></p>
+                <p><a href="profile.php">Manage Addresses</a></p>
               </div>
               <div class="account">
                 <i class="fa-solid fa-credit-card"></i>
@@ -98,7 +105,7 @@
               </div>
               <div class="box">
                 <i class="fa-solid fa-power-off"></i>
-                <span><a href="">Logout</a></span>
+                <span><a href="logout.php">Logout</a></span>
               </div>
             </div>
           </aside>
@@ -106,37 +113,49 @@
 
           <!-- Right Side -->
           <main>
+<<<<<<< HEAD:profile.html
             <form action="" method="post">
+=======
+          <form action="profile.back.php" method="post">
+>>>>>>> 6faba02484261709e6985fee411cde6e27c07c75:profile.php
             <div class="box">
                 <h5>Profile Information</h5>
                 <div>
-                    <input type="text" value="Joseph" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="text" value="<?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?>" name="username" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form>   -->
                 </div>
             </div>
             <div class="box">
                 <h5>Email Address</h5>
                 <div>
-                    <input type="email" value="user@gmail.com" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="email" value="user@gmail.com" name="email" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form> -->
                 </div>
             </div>
             <div class="box">
                 <h5>Phone Number</h5>
                 <div>
-                    <input type="number" value="1234567890" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="number" value="1234567890" name="phone" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form> -->
                 </div>
             </div>
             <div class="box">
                 <h5>Delivery Address</h5>
                 <div>
-                    <input type="text" value="Kolkata" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="text" value="Kolkata" name="address" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form> -->
                 </div>
             </div>
           </form>

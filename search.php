@@ -1,3 +1,10 @@
+<?php
+  
+  require './components/connection.php';
+  session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +21,21 @@
     <div class="upper-layer"> </div>
     <nav id="navbar">
               <div class="nav-left">
-                <a href="index.html">
+                <a href="index.php">
                     <h4 class="logo"><i class="fa-solid fa-truck-fast"></i> <span>Shopping Zone</span></h4>
                 </a>
                 <form action="">
                   <input type="search" name="searchInput" placeholder="Search for Products, brands and more" id="searchInput" />
                   <div>
-                    <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="search.php"><i class="fa-solid fa-magnifying-glass"></i></a>
                   </div>
                 </form>
               </div>
               <div class="nav-right">
                 <span id="user">
-                  Joseph
-                  <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
-                <span><a href="cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
+                <?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?>
+                <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
+                <span><a href="cart.php">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
                 <i class="fa-solid fa-bars"></i>
               </div>
     </nav>
@@ -36,20 +43,20 @@
       <div class="nav-menu">
             <div id="tooltip"><i class="fa-solid fa-caret-down"></i></div>
             <div class="menu">
-              <a href="profile.html"><i class="fa-solid fa-user"></i> <span>My Profile</span></a>
+              <a href="profile.php"><i class="fa-solid fa-user"></i> <span>My Profile</span></a>
             </div>
             <div class="menu">
-              <a href="order.html"><i class="fa-solid fa-basket-shopping"></i> <span>Orders</span></a>
+              <a href="order.php"><i class="fa-solid fa-basket-shopping"></i> <span>Orders</span></a>
             </div>
             <div class="menu">
-              <a href="wishlist.html"><i class="fa-solid fa-hand-holding-heart"></i>
+              <a href="wishlist.php"><i class="fa-solid fa-hand-holding-heart"></i>
               <span>Wishlist</span></a>
             </div>
             <div class="menu">
-              <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a>
+              <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a>
             </div>
             <div class="menu">
-                <a href="index.html"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
+                <a href="index.php"><i class="fa-solid fa-house-chimney"></i> <span>Home</span></a>
             </div>
             <div class="menu">
               <a href="#"><i class="fa-solid fa-power-off"></i> <span>Logout</span></a>
@@ -85,7 +92,7 @@
                 <div class="products">
                     <!-- Product Row -->
                     <div class="search-products">
-                      <a href="product_details.html">
+                      <a href="product_details.php">
                         <div id="product-img">
                             <img src="images/headphone1.webp" alt="Product" />
                         </div>
@@ -96,14 +103,14 @@
                             <div class="rating">4 <i class="fa-solid fa-star"></i></div>
                             <div>
                                 <h6 id="price">₹7,000</h6>
-                                <a href="product_details.html"><button>Buy Now</button></a>
+                                <a href="product_details.php"><button>Buy Now</button></a>
                             </div>
                         </div>
                       </a>
                     </div>
                     <!-- Product Row -->
                     <div class="search-products">
-                      <a href="product_details.html">
+                      <a href="product_details.php">
                         <div id="product-img">
                             <img src="images/fan.webp" alt="Product" />
                         </div>
@@ -114,14 +121,14 @@
                             <div class="rating">4 <i class="fa-solid fa-star"></i></div>
                             <div>
                                 <h6 id="price">₹3,999</h6>
-                                <a href="product_details.html"><button>Buy Now</button></a>
+                                <a href="product_details.php"><button>Buy Now</button></a>
                             </div>
                         </div>
                       </a>
                     </div>
                     <!-- Product Row -->
                     <div class="search-products">
-                      <a href="product_details.html">
+                      <a href="product_details.php">
                         <div id="product-img">
                             <img src="images/tv.png" alt="Product" />
                         </div>
@@ -132,14 +139,14 @@
                             <div class="rating">4 <i class="fa-solid fa-star"></i></div>
                             <div>
                                 <h6 id="price">₹46,000</h6>
-                                <a href="product_details.html"><button>Buy Now</button></a>
+                                <a href="product_details.php"><button>Buy Now</button></a>
                             </div>
                         </div>
                       </a>
                     </div>
                     <!-- Product Row -->
                     <div class="search-products">
-                      <a href="product_details.html">
+                      <a href="product_details.php">
                         <div id="product-img">
                             <img src="images/shoe13.jpg" alt="Product" />
                         </div>
@@ -150,14 +157,14 @@
                             <div class="rating">4 <i class="fa-solid fa-star"></i></div>
                             <div>
                                 <h6 id="price">₹599</h6>
-                                <a href="product_details.html"><button>Buy Now</button></a>
+                                <a href="product_details.php"><button>Buy Now</button></a>
                             </div>
                         </div>
                       </a>
                     </div>
                     <!-- Product Row -->
                     <div class="search-products">
-                      <a href="product_details.html">
+                      <a href="product_details.php">
                         <div id="product-img">
                             <img src="images/sunglass4.jpg" alt="Product" />
                         </div>
@@ -168,7 +175,7 @@
                             <div class="rating">4 <i class="fa-solid fa-star"></i></div>
                             <div>
                                 <h6 id="price">₹999</h6>
-                                <a href="product_details.html"><button>Buy Now</button></a>
+                                <a href="product_details.php"><button>Buy Now</button></a>
                             </div>
                         </div>
                       </a>
