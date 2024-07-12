@@ -125,16 +125,16 @@
             <div class="box">
                 <h5>Email Address</h5>
                 <div>
-                    <input type="email" value="user@gmail.com" name="email" readonly>
-                    <button class="edit-btn" type="button">Edit</button>
+                    <input type="email" value="" name="email" id="email" readonly>
+                    <button class="edit-btn email-btn" type="button">Edit</button>
                     <button class="save-btn" type="submit">Save</button>
                 </div>
             </div>
             <div class="box">
                 <h5>Phone Number</h5>
                 <div>
-                    <input type="number" value="1234567890" name="phone" readonly>
-                    <button class="edit-btn" type="button">Edit</button>
+                    <input type="number" value="" name="phone" id="phone" readonly>
+                    <button class="edit-btn phone-btn" type="button">Edit</button>
                     <button class="save-btn" type="submit">Save</button>
                 </div>
             </div>

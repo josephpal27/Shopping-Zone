@@ -30,4 +30,21 @@
         editButton.style.display = 'inline-block';
       });
     });
+
+    // --- Functionality Add/Edit Toggle in Email & Phone Field
+    let emailInput = document.getElementById('email');
+    let emailBtn = document.querySelector('.email-btn');
+    let phoneInput = document.getElementById('phone');
+    let phoneBtn = document.querySelector('.phone-btn');
+
+    function btnToggle() {
+      if (emailInput.value.length == 0) {
+        emailBtn.innerText = 'Add';
+        
+      }
+    }
+
+    btnToggle();
+
+    console.log(hi);
   
