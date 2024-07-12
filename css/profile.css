@@ -259,6 +259,12 @@ section main {
   overflow: hidden;
 }
 
+section main form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 section main .box {
   margin-bottom: 2.5rem;
 }
