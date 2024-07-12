@@ -33,7 +33,7 @@
           </div>
           <div class="nav-right">
             <span id="user">
-              Joseph
+            <?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?>
               <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
             <span><a href="cart.php">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
             <i class="fa-solid fa-bars"></i>
@@ -76,7 +76,7 @@
               </div>
               <div>
                 <span id="greet">Hello,</span><br>
-                <span id="username">Joseph</span>
+                <span id="username"><?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?></span>
               </div>
             </div>
             <div class="bottom">
@@ -113,38 +113,48 @@
 
           <!-- Right Side -->
           <main>
+          <form action="profile.back.php" method="post">
             <div class="box">
                 <h5>Profile Information</h5>
                 <div>
-                    <input type="text" value="Joseph" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="text" value="<?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?>" name="username" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form>   -->
                 </div>
             </div>
             <div class="box">
                 <h5>Email Address</h5>
                 <div>
-                    <input type="email" value="user@gmail.com" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="email" value="user@gmail.com" name="email" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form> -->
                 </div>
             </div>
             <div class="box">
                 <h5>Phone Number</h5>
                 <div>
-                    <input type="number" value="1234567890" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="number" value="1234567890" name="phone" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form> -->
                 </div>
             </div>
             <div class="box">
                 <h5>Delivery Address</h5>
                 <div>
-                    <input type="text" value="Kolkata" readonly>
-                    <button class="edit-btn">Edit</button>
-                    <button class="save-btn">Save</button>
+                  <!-- <form action="profile.back.php" method="post"> -->
+                    <input type="text" value="Kolkata" name="address" readonly>
+                    <button class="edit-btn" type="button">Edit</button>
+                    <button class="save-btn" type="submit">Save</button>
+                  <!-- </form> -->
                 </div>
             </div>
+          </form>
           </main>
        </div>
       </section>

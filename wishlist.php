@@ -38,8 +38,8 @@
     </div>
     <div class="nav-right">
       <span id="user">
-        Joseph
-        <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
+      <?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?>
+      <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
       <span><a href="cart.php">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
       <i class="fa-solid fa-bars"></i>
     </div>
@@ -80,7 +80,7 @@
           </div>
           <div>
             <span id="greet">Hello,</span><br>
-            <span id="username">Joseph</span>
+            <span id="username"><?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?></span>
           </div>
         </div>
         <div class="bottom">

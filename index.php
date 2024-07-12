@@ -1,3 +1,10 @@
+<?php
+  
+    require './components/connection.php';
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +34,7 @@
           </div>
           <div class="nav-right">
             <span id="user">
-              Joseph
+              <?php echo isset($_SESSION['user']) ? ucwords($_SESSION['user']) : 'User' ?>
               <i class="fa-solid fa-caret-down" style="transition: rotate 0.2s ease"></i></span>
             <span><a href="cart.php">Cart <i class="fa-solid fa-cart-shopping"></i></a></span>
             <i class="fa-solid fa-bars"></i>
