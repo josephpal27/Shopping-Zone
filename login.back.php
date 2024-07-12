@@ -11,7 +11,7 @@
 
         if ($response) {
             if (mysqli_num_rows($response) === 0) {
-                echo 'Invalid Username';
+                header('location: ./error_alerts/invalid_username.php');
                 exit();
             }
 
@@ -28,7 +28,7 @@
                $_SESSION['isLoggedin'] = true;
                header('location: index.php');
             } else{
-                echo 'Invalid Password';
+                header('location: ./error_alerts/invalid_password.php');
             }
         }
     }

@@ -9,14 +9,14 @@
         $confirm_password = $_POST['c_pass'];
 
         if ($password  != $confirm_password) {
-            echo 'Password Mismatch';
+            header('location: ./error_alerts/signup_error_2.php');
             exit();
         } else{
             $sql = "SELECT * FROM `user` WHERE `username` = '$username'";
             $response = mysqli_query($connection, $sql);
 
             if (mysqli_num_rows($response) > 0) {
-                echo 'username already exist';
+                header('location: ./error_alerts/signup_error.php');
                 exit();
             } else{
                 $hash_pass = password_hash($password, PASSWORD_DEFAULT);
