@@ -39,12 +39,17 @@
 
     function btnToggle() {
       if (emailInput.value.length == 0) {
-        emailBtn.innerText = 'Add';
-        
+        emailBtn.innerHTML = 'Add';
+      } else{
+        emailBtn.innerHTML = 'Edit';
+      }
+
+      if (phoneInput.value.length == 0) {
+        phoneBtn.innerHTML = 'Add';
+      } else{
+        phoneBtn.innerHTML = 'Edit';
       }
     }
 
     btnToggle();
-
-    console.log('hi');
   
