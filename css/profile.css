@@ -39,7 +39,7 @@ nav {
   z-index: 2;
 }
 
-.container {
+.my-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,7 +165,7 @@ section {
   min-height: 90vh;
 }
 
-section .container {
+section .my-container {
   display: flex;
   align-items: flex-start;
   padding: 1rem;
@@ -217,7 +217,6 @@ section aside .bottom .box a {
 section aside .bottom a {
   text-decoration: none;
   color: black;
-
 }
 
 section aside .bottom a:hover {
@@ -315,7 +314,7 @@ section main .box .save-btn:hover {
 /* --- Media Queries --- */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
+  /* Media For Navbar */
   nav {
     padding: 0 3%;
   }
@@ -344,12 +343,38 @@ section main .box .save-btn:hover {
     right: 4.2%;
   }
 
+  /* Media For Aside Section */
+  section aside {
+    width: 45%;
+  }
+  section aside .bottom .box a {
+    font-size: 1rem;
+  }
+
+  /* Media For Main Section */
+  section main {
+    width: 53.7%;
+  }
+  section main .box h5 {
+    font-size: 1.3rem;
+  }
+  
+  section main .box input {
+    padding: 0.7rem 0.7rem;
+    font-size: 1rem;
+  }
+  
+  section main .box button {
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.7rem;
+    font-size: 0.8rem;
+  }
 }
 
 /* ---------------------------------------------- */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-
+  /* Media For Navbar */
   nav {
     padding: 0 3%;
   }
@@ -382,11 +407,48 @@ section main .box .save-btn:hover {
     right: 3.6%;
   }
 
+  /* Media For Hero Section */
+  section .my-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  /* Media For Aside Section */
+  section aside {
+    width: 100%;
+  }
+  section aside .bottom .box .fa-caret-right {
+    margin-left: 71%;
+  }
+
+  /* Media For Main Section */
+  section main {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  section main .box h5 {
+    font-size: 1.4rem;
+  }
+  
+  section main .box input {
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+  }
+  
+  section main .box button {
+    padding: 0.2rem 0.5rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+
 }
 
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 576px) {
+  /* Media For Navbar */
   nav {
     padding: 0 3.7%;
   }
@@ -427,6 +489,51 @@ section main .box .save-btn:hover {
   .nav-menu #tooltip {
     position: absolute;
     left: 13.6rem;
+  }
+
+  /* Media For Hero Section */
+  section .my-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  /* Media For Aside Section */
+  section aside {
+    width: 100%;
+  }
+  section aside .top {
+    gap: 0.3rem;
+  }
+  section aside .bottom .box a {
+    font-size: 1rem;
+  }
+  section aside .bottom .box .fa-caret-right {
+    margin-left: 50%;
+  }
+
+  /* Media For Main Section */
+  section main {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  section main .box h5 {
+    font-size: 1.2rem;
+  }
+  
+  section main .box input {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  section main .box button {
+    padding: 0.2rem 0.5rem;
+    margin-left: 0;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
   }
 
 }

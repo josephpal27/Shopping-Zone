@@ -651,20 +651,24 @@ aside .details #btn button:hover {
 
     main .cart-head h5 {
         padding: 0.8rem 0 0.6rem 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     main .cart-products {
         gap: 0.4rem;
     }
     
     main .cart-products img {
-        width: 140px;
-        height: 140px;
+        width: 90px;
+        height: 90px;
     }
     
     main .cart-products .product-des #title,
     .price {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    main .cart-products .product-des #seller{
+        font-size: 0.8rem;
     }
     
     main .cart-products .product-des .count {
@@ -673,9 +677,10 @@ aside .details #btn button:hover {
     }
     
     main .cart-products .product-des .count #icn {
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 1.2rem;
+        height: 1.2rem;
         border-radius: 50%;
+        font-size: 0.8rem;
     }
     
     main .cart-products .product-des .count .item-count {
@@ -685,6 +690,7 @@ aside .details #btn button:hover {
     main .cart-products .product-des .count button {
         margin-left: 1.5rem;
         padding: 0.1rem 0.6rem;
+        font-size: 0.8rem;
     }
    
     
@@ -701,21 +707,21 @@ aside .details #btn button:hover {
     }
     aside .details #details-body div {
         padding: 0.5rem 1.1rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     aside .details #details-foot {
         padding: 1rem 1.1rem 0.9rem 1.1rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     aside .details #details-foot h4{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     aside .details #btn {
-        padding: 1rem 1.1rem 0.9rem 1.1rem;
+        padding: 0.9rem 1.1rem 0.9rem 1.1rem;
     }
     aside .details #btn button {
-        padding: 0.5rem 0.8rem;
-        font-size: 1.2rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 1.1rem;
     }
 
 }
