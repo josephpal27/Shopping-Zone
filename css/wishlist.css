@@ -1,472 +1,705 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.2s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
 }
 
 /* Edit Scroll Bar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(199, 161, 235);
+  background: rgb(199, 161, 235);
 }
 
 main .products::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 /* --- Navbar Starts here --- */
 .upper-layer {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 4;
 }
 
 nav {
-    background-color: rgb(152, 23, 217);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 7.98%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2;
+  background-color: rgb(138, 11, 202);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7.98%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.my-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-left a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-left .logo {
-    margin-right: 4rem;
-    padding: 0.6rem 0;
-    color: white;
+  margin-right: 4rem;
+  padding: 0.6rem 0;
+  color: white;
 }
 
 form {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
 }
 
 .nav-left #searchInput {
-    width: 30vw;
-    height: 2.5rem;
-    padding: 0 1rem;
-    border: none;
-    outline: none;
+  width: 30vw;
+  height: 2.5rem;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
 }
 
 .nav-left form i {
-    font-size: 1.5rem;
-    padding: 0 .5rem;
-    color: rgb(169, 44, 232);
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  color: rgb(169, 44, 232);
 }
 
 .nav-left form i:hover {
-    color: rgb(147, 19, 210);
-    transition: color 0.1s ease;
+  color: rgb(147, 19, 210);
+  transition: color 0.1s ease;
 }
 
 .nav-right {
-    padding: 0.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .nav-right span {
-    margin-left: 2.5rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white;
-    padding: 0.95rem 0;
-    cursor: pointer
+  margin-left: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.95rem 0;
+  cursor: pointer;
 }
 
 .nav-right a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .nav-right .fa-bars {
-    display: none;
+  display: none;
 }
 
 .nav-menu {
-    position: fixed;
-    right: 10%;
-    background-color: white;
-    width: max-content;
-    box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
-    z-index: -5;
-    opacity: 0;
-    transition: all 0.3s ease;
+  position: fixed;
+  right: 10%;
+  background-color: white;
+  width: max-content;
+  box-shadow: 0px 1px 20px 1px rgba(152, 152, 152, 0.748);
+  z-index: -5;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .nav-menu #tooltip {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: -0.4rem;
-    left: 7rem;
-    transform: rotate(180deg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -0.4rem;
+  left: 7rem;
+  transform: rotate(180deg);
 }
 
 .nav-menu #tooltip i {
-    color: white;
-    font-size: 1.7rem;
+  color: white;
+  font-size: 1.7rem;
 }
 
 .nav-menu .menu {
-    padding: 0.5rem 0 0.8rem 2rem;
-    border-bottom: 1px solid rgb(224, 224, 224);
-    font-size: 1.1rem;
-    font-weight: 500;
+  padding: 0.5rem 0 0.8rem 2rem;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .nav-menu .menu a {
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem 5rem 0.5rem 0;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 5rem 0.5rem 0;
 }
 
 .nav-menu .menu:hover {
-    background-color: rgb(242, 242, 242);
-    transition: background-color 0.1s ease;
+  background-color: rgb(242, 242, 242);
+  transition: background-color 0.1s ease;
 }
 
 .nav-menu i {
-    margin-right: 2rem;
-    color: rgb(169, 44, 232);
+  margin-right: 2rem;
+  color: rgb(169, 44, 232);
 }
 
 /* --- Navbar Ends here --- */
 
-
 /* --- Hero Section Starts here --- */
 section {
-    background-color: rgb(241, 241, 241);
-    min-height: 90vh;
+  background-color: rgb(241, 241, 241);
+  min-height: 90vh;
 }
 
-section .container {
-    display: flex;
-    align-items: flex-start;
-    padding: 1rem;
-    /* background-color: aquamarine; */
+section .my-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  /* background-color: aquamarine; */
 }
 
 section aside {
-    width: 25%;
-    overflow: hidden;
+  width: 25%;
+  overflow: hidden;
 }
 
 section aside .top {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
 }
 
 section aside .top img {
-    margin: 0.8rem;
+  margin: 0.8rem;
 }
 
 section aside .top #greet {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 section aside .top #username {
-    font-weight: 500;
-    font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 section aside .bottom {
-    background-color: white;
-    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
-    margin-top: 1rem;
+  background-color: white;
+  box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+  margin-top: 1rem;
 }
 
 section aside .bottom .box {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    border-bottom: 1px solid rgb(236, 236, 236);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 section aside .bottom .box a {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 section aside .bottom a {
-    text-decoration: none;
-    color: black;
-
+  text-decoration: none;
+  color: black;
 }
 
 section aside .bottom a:hover {
-    color: rgb(147, 19, 210);
+  color: rgb(147, 19, 210);
 }
 
 section aside .bottom .box .fa-caret-right {
-    margin-left: 48%;
-    color: black;
+  margin-left: 48%;
+  color: black;
 }
 
 section aside .bottom i {
-    color: rgb(153, 17, 221);
+  color: rgb(153, 17, 221);
 }
 
 section aside .bottom .account {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  font-weight: 500;
 }
 
 section aside .bottom .account-menu {
-    padding-left: 3rem;
-    border-bottom: 1px solid rgb(236, 236, 236);
+  padding-left: 3rem;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 section aside .bottom .account-menu p:hover {
-    color: rgb(147, 19, 210);
+  color: rgb(147, 19, 210);
 }
 
 section main {
-    background-color: white;
-    width: 73.7%;
-    align-self: self-start;
-    box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
-    overflow: hidden;
+  background-color: white;
+  width: 73.7%;
+  align-self: self-start;
+  box-shadow: 1px 2px 7px 1px rgba(175, 175, 175, 0.748);
+  overflow: hidden;
 }
 
 section main .wishlist-head {
-    padding: 1rem 2rem;
-    border-bottom: 1px solid rgb(236, 236, 236);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 section main .products {
-    max-height: 79vh;
-    overflow-y: scroll;
+  max-height: 79vh;
+  overflow-y: scroll;
 }
 
 section main .wishlist-products {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-bottom: 1px solid rgb(236, 236, 236);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 section main .wishlist-products img {
-    margin: 2rem;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
+  margin: 2rem;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
 
 section main .product-des {
-    padding: 1rem 0;
-    width: 55%;
-    font-size: 1.2rem;
+  padding: 1rem 0;
+  width: 55%;
+  font-size: 1.2rem;
 }
 
 section main .product-des p {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 section main .product-des:hover p {
-    color: rgb(135, 12, 197);
+  color: rgb(135, 12, 197);
 }
 
 section main .product-des .rating {
-    background-color: rgb(0, 174, 0);
-    width: fit-content;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 0.1rem 0.6rem;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  background-color: rgb(0, 174, 0);
+  width: fit-content;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.1rem 0.6rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 section main .product-des #price {
-    margin-top: 1rem;
-    font-size: 1.4rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
 section main .product-des button {
-    border: none;
-    outline: none;
-    padding: 0.3rem 1rem;
-    border-radius: 5px;
-    background-color: blueviolet;
-    color: white;
-    margin-top: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 1rem;
 }
 
 section main .product-des button:hover {
-    background-color: rgb(115, 22, 201);
+  background-color: rgb(115, 22, 201);
 }
 
 section main .wishlist-products .fa-trash-can {
-    padding: 0.2rem;
-    margin-left: 8rem;
-    color: rgb(132, 132, 132);
-    font-size: 1.2rem;
-    cursor: pointer;
+  padding: 0.2rem;
+  margin-left: 8rem;
+  color: rgb(132, 132, 132);
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 section main .wishlist-products .fa-trash-can:hover {
-    color: rgb(248, 1, 1);
+  color: rgb(248, 1, 1);
 }
 
 /* --- Hero Section Ends here --- */
 
-
-
-
-
 /* --- Media Queries --- */
 
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+  /* Media For Aside Section */
+  section aside {
+    width: 30%;
+  }
+  section aside .bottom .box a {
+    font-size: 0.8rem;
+  }
+  section aside span {
+    font-size: 0.9rem;
+  }
+  section aside p {
+    font-size: 0.9rem;
+  }
+
+  /* Media For Main Section */
+  section main {
+    width: 68.5%;
+  }
+  section main .wishlist-head h5 {
+    font-size: 1.2rem;
+  }
+  section main .wishlist-products img {
+    margin: 1rem;
+    width: 100px;
+    height: 100px;
+  }
+  section main .product-des {
+    width: 100%;
+    font-size: 1rem;
+  }
+  section main .product-des .rating {
+    font-size: 0.8rem;
+  }
+  section main .product-des .rating i {
+    font-size: 0.6rem;
+  }
+
+  section main .product-des #price {
+    font-size: 1.2rem;
+  }
+
+  section main .product-des button {
+    padding: 0.2rem 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  section main .wishlist-products .fa-trash-can {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  /* Media For Nav Section */
+  nav {
+    padding: 0 3%;
+  }
 
-    nav {
-        padding: 0 3%;
-    }
+  .nav-left .logo {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+  }
 
-    .nav-left .logo {
-        margin-right: 1rem;
-        font-size: 1.4rem;
-    }
+  .nav-left #searchInput {
+    width: 34vw;
+    padding: 0 0.5rem;
+  }
 
-    .nav-left #searchInput {
-        width: 34vw;
-        padding: 0 0.5rem;
-    }
+  .nav-left form i {
+    font-size: 1.4rem;
+    padding: 0 0.5rem 0 0;
+  }
 
-    .nav-left form i {
-        font-size: 1.4rem;
-        padding: 0 0.5rem 0 0;
-    }
+  .nav-right span {
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+  }
 
-    .nav-right span {
-        margin-left: 1.5rem;
-        font-size: 1.1rem;
-    }
+  .nav-menu {
+    right: 4.2%;
+  }
 
-    .nav-menu {
-        right: 4.2%;
-    }
+  /* Media For Section Container */
+  .my-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
 
+  /* Media For Aside Section */
+  section aside {
+    width: 100%;
+  }
+  section aside .bottom .box a {
+    font-size: 1rem;
+  }
+  section aside .bottom .box .fa-caret-right {
+    margin-left: 75%;
+  }
+
+  /* Media For Main Section */
+  section main {
+    width: 100%;
+  }
+  section main .wishlist-head h5 {
+    font-size: 1.2rem;
+  }
+  section main .wishlist-products img {
+    margin: 1rem;
+    width: 120px;
+    height: 120px;
+  }
+  section main .product-des {
+    width: 100%;
+    font-size: 1rem;
+  }
+  section main .product-des .rating {
+    font-size: 0.8rem;
+  }
+  section main .product-des .rating i {
+    font-size: 0.6rem;
+  }
+
+  section main .product-des #price {
+    font-size: 1.2rem;
+  }
+
+  section main .product-des button {
+    padding: 0.2rem 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  section main .wishlist-products .fa-trash-can {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
 }
 
 /* ---------------------------------------------- */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  /* Media For Nav Section */
+  nav {
+    padding: 0 3%;
+  }
 
-    nav {
-        padding: 0 3%;
-    }
+  .nav-left .logo {
+    margin-right: 1.2rem;
+    font-size: 1.4rem;
+  }
 
-    .nav-left .logo {
-        margin-right: 1.2rem;
-        font-size: 1.4rem;
-    }
+  .nav-left .logo span {
+    display: none;
+  }
 
-    .nav-left .logo span {
-        display: none;
-    }
+  .nav-left #searchInput {
+    width: 42vw;
+    padding: 0 0.5rem;
+  }
 
-    .nav-left #searchInput {
-        width: 42vw;
-        padding: 0 0.5rem;
-    }
+  .nav-left form i {
+    font-size: 1.3rem;
+    padding: 0 0.7rem 0 0;
+  }
 
-    .nav-left form i {
-        font-size: 1.3rem;
-        padding: 0 0.7rem 0 0;
-    }
+  .nav-right span {
+    margin-left: 1.2rem;
+    font-size: 1.1rem;
+  }
 
-    .nav-right span {
-        margin-left: 1.2rem;
-        font-size: 1.1rem;
-    }
+  .nav-menu {
+    right: 3.6%;
+  }
 
-    .nav-menu {
-        right: 3.6%;
-    }
+  /* Media For Section Container */
+  .my-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
 
+  /* Media For Aside Section */
+  section aside {
+    width: 100%;
+  }
+  section aside .bottom .box a {
+    font-size: 1rem;
+  }
+  section aside .bottom .box .fa-caret-right {
+    margin-left: 70%;
+  }
+
+  /* Media For Main Section */
+  section main {
+    width: 100%;
+  }
+  section main .wishlist-head h5 {
+    font-size: 1.2rem;
+  }
+  section main .wishlist-products img {
+    margin: 1rem;
+    width: 120px;
+    height: 120px;
+  }
+  section main .product-des {
+    width: 100%;
+    font-size: 1rem;
+  }
+  section main .product-des .rating {
+    font-size: 0.8rem;
+  }
+  section main .product-des .rating i {
+    font-size: 0.6rem;
+  }
+
+  section main .product-des #price {
+    font-size: 1.2rem;
+  }
+
+  section main .product-des button {
+    padding: 0.2rem 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  section main .wishlist-products .fa-trash-can {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
 }
 
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 576px) {
-    nav {
-        padding: 0 3.7%;
-    }
+  /* Media For Nav Section */
+  nav {
+    padding: 0 3.7%;
+  }
 
-    nav .nav-right span {
-        display: none;
-    }
+  nav .nav-right span {
+    display: none;
+  }
 
-    .nav-left .logo {
-        margin-right: 1rem;
-        font-size: 1.3rem;
-    }
+  .nav-left .logo {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
 
-    .nav-left .logo span {
-        display: none;
-    }
+  .nav-left .logo span {
+    display: none;
+  }
 
-    .nav-left #searchInput {
-        width: 55vw;
-        padding: 0 0.5rem;
-    }
+  .nav-left #searchInput {
+    width: 55vw;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
 
-    .nav-left form i {
-        font-size: 1.2rem;
-        padding: 0 0.7rem 0 0;
-    }
+  .nav-left form i {
+    font-size: 1.2rem;
+    padding: 0 0.7rem 0 0;
+  }
 
-    .nav-right .fa-bars {
-        display: block;
-        color: white;
-        font-size: 1.4rem;
-    }
+  .nav-right .fa-bars {
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+  }
 
-    .nav-menu {
-        right: 2%;
-    }
+  .nav-menu {
+    right: 2%;
+  }
 
-    .nav-menu #tooltip {
-        position: absolute;
-        left: 13.6rem;
-    }
+  .nav-menu #tooltip {
+    position: absolute;
+    left: 13.6rem;
+  }
 
+  /* Media For Section Container */
+  section .my-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  /* Media For Aside Section */
+  section aside {
+    width: 100%;
+  }
+  section aside .bottom .box a {
+    font-size: 0.9rem;
+  }
+  section aside span {
+    font-size: 0.9rem;
+  }
+  section aside p {
+    font-size: 0.9rem;
+  }
+  section aside .bottom .box .fa-caret-right {
+    margin-left: 55%;
+  }
+
+  /* Media For Main Section */
+  section main {
+    width: 100%;
+  }
+  section main .wishlist-head {
+    padding: 0.8rem 1rem;
+  }
+  section main .wishlist-head h5 {
+    font-size: 1rem;
+  }
+  section main .wishlist-products img {
+    margin: 1rem;
+    width: 70px;
+    height: 70px;
+  }
+  section main .product-des {
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+  section main .product-des .rating {
+    font-size: 0.6rem;
+  }
+  section main .product-des .rating i {
+    font-size: 0.5rem;
+  }
+
+  section main .product-des #price {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+  }
+
+  section main .product-des button {
+    padding: 0.2rem 0.8rem;
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  section main .wishlist-products .fa-trash-can {
+    margin: 0 1rem 0 0;
+    font-size: 0.8rem;
+  }
 }

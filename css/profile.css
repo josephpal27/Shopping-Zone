@@ -28,7 +28,7 @@
 }
 
 nav {
-  background-color: rgb(152, 23, 217);
+  background-color: rgb(138, 11, 202);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +77,7 @@ form {
 
 .nav-left form i {
   font-size: 1.5rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   color: rgb(169, 44, 232);
 }
 
@@ -96,7 +96,7 @@ form {
   font-weight: 500;
   color: white;
   padding: 0.95rem 0;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .nav-right a {
@@ -157,7 +157,6 @@ form {
 }
 
 /* --- Navbar Ends here --- */
-
 
 /* --- Hero Section Starts here --- */
 section {
@@ -258,7 +257,7 @@ section main {
   overflow: hidden;
 }
 
-section main form{
+section main form {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -308,9 +307,6 @@ section main .box .save-btn:hover {
 
 /* --- Hero Section Ends Here --- */
 
-
-
-
 /* --- Media Queries --- */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -358,12 +354,12 @@ section main .box .save-btn:hover {
   section main .box h5 {
     font-size: 1.3rem;
   }
-  
+
   section main .box input {
     padding: 0.7rem 0.7rem;
     font-size: 1rem;
   }
-  
+
   section main .box button {
     padding: 0.2rem 0.5rem;
     margin-left: 0.7rem;
@@ -431,18 +427,17 @@ section main .box .save-btn:hover {
   section main .box h5 {
     font-size: 1.4rem;
   }
-  
+
   section main .box input {
     padding: 0.7rem 1rem;
     font-size: 1.1rem;
   }
-  
+
   section main .box button {
     padding: 0.2rem 0.5rem;
     margin-left: 1rem;
     font-size: 0.9rem;
   }
-
 }
 
 /* ---------------------------------------------- */
@@ -469,6 +464,7 @@ section main .box .save-btn:hover {
   .nav-left #searchInput {
     width: 55vw;
     padding: 0 0.5rem;
+    font-size: 0.9rem;
   }
 
   .nav-left form i {
@@ -521,13 +517,13 @@ section main .box .save-btn:hover {
   section main .box h5 {
     font-size: 1.2rem;
   }
-  
+
   section main .box input {
     padding: 0.7rem 1rem;
     font-size: 1rem;
     width: 100%;
   }
-  
+
   section main .box button {
     padding: 0.2rem 0.5rem;
     margin-left: 0;
@@ -535,5 +531,4 @@ section main .box .save-btn:hover {
     margin-top: 1rem;
     font-size: 0.8rem;
   }
-
 }
